@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yrmjhtdjxh.punch.mapper.StudentMapper">
+    <select id="getOne" parameterType="Long" resultType="com.yrmjhtdjxh.punch.domain.Student">
+        SELECT * FROM students WHERE studentID = #{studentID}
+    </select>
+    <insert id="insert" parameterType="com.yrmjhtdjxh.punch.domain.Student">
+        INSERT INTO
+            students
+            (id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch)
+        VALUES
+            (#{id}, #{studentID},  #{password},  #{name}, #{sex},  #{grade},  #{photo},  #{avatar},  #{createTime},  #{isPunch})
+    </insert>
+    <select id="findStudentByStudentIDAndPassword"  resultType="com.yrmjhtdjxh.punch.domain.Student">
+        SELECT * FROM students WHERE studentID = #{studentID} AND password = #{password}
+    </select>
+    <select id="getAll" resultType="com.yrmjhtdjxh.punch.domain.Student">
+        SELECT * FROM students;
+    </select>
+    <update id="updatePunchByStudentID">
+        UPDATE students
+        SET isPunch = #{punchStatus}
+        WHERE studentID = #{studentID}
+    </update>
+    <!--只允许他们自己修改密码，-->
+    <update id="updateStudentInfo" parameterType="com.yrmjhtdjxh.punch.domain.Student">
+        UPDATE students
+        SET password = #{password}
+        WHERE studentID = #{studentID}
+    </update>
+</mapper>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yrmjhtdjxh.punch.mapper.PunchRecordMapper">
+
+    <select id="findByStudentID" resultType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+        SELECT * FROM punchrecord WHERE studentID = #{studentID} AND recordTime > 0 ORDER BY beginPunchTime DESC
+    </select>
+
+    <!--根据学号查询今天的打卡时间-->
+    <select id="getTodayByStudentID" resultType="Double">
+        SELECT SUM(recordTime)
+        FROM punchrecord
+        WHERE studentID = #{studentID} AND recordTime > 0
+        AND  date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d');
+    </select>
+
+    <!--<，&符号需要转义-->
+    <select id="getWeekByStudentID" resultType="Double">
+        SELECT SUM(recordTime)
+        FROM punchrecord
+        WHERE date_format(date, '%Y-%m-%d') >= #{beginTime}
+        AND date_format(date, '%Y-%m-%d') &lt; #{endTime}
+        AND studentID = #{studentID} and recordTime > 0 ;
+    </select>
+
+    <!--新增一条打卡记录-->
+    <insert id="insert" parameterType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+        INSERT INTO
+            punchrecord
+            (id, studentID, beginPunchTime, endPunchTime, recordTime, date)
+        VALUES
+            (#{id}, #{studentID}, #{beginPunchTime}, #{endPunchTime}, #{recordTime}, #{date});
+    </insert>
+
+    <!--根据学生ID查看没有完成的打卡记录-->
+    <select id="getUnfinishPunchByStudnetID" resultType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+        SELECT *
+        FROM punchrecord
+        WHERE studentID = #{studentID}
+        AND recordTime = 0;
+    </select>
+
+    <!--结束打卡，更新数据库中那一条数据-->
+    <update id="endPunchRecord" parameterType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+        UPDATE  punchrecord
+        SET endPunchTime = #{endPunchTime},recordTime = #{recordTime}
+        WHERE studentID = #{studentID}
+        AND recordTime = 0
+        AND endPunchTime = #{beginPunchTime};
+    </update>
+
+    <delete id="deleteByStudentID" >
+        DELETE FROM punchrecord
+        WHERE studentID = #{studentID} AND recordTime = 0;
+    </delete>
+</mapper>

@@ -1,0 +1,49 @@
+2019-10-19 19:28:26.463  INFO 5628 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on etron with PID 5628 (F:\ideaTest\punch\target\classes started by etron in F:\ideaTest\punch)
+2019-10-19 19:28:26.654 DEBUG 5628 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-19 19:28:26.655  INFO 5628 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-10-19 19:28:26.809  INFO 5628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-19 19:28:26.814  INFO 5628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-19 19:28:28.555  INFO 5628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-19 19:28:28.579  INFO 5628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-10-19 19:28:29.295  INFO 5628 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$da61165c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-19 19:28:29.953  INFO 5628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2019-10-19 19:28:29.984  INFO 5628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 19:28:29.984  INFO 5628 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-19 19:28:30.097  INFO 5628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 19:28:30.097  INFO 5628 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3282 ms
+2019-10-19 19:28:31.174  INFO 5628 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 19:28:31.751  INFO 5628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-19 19:28:31.813  INFO 5628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2019-10-19 19:28:31.816  INFO 5628 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 6.844 seconds (JVM running for 8.893)
+2019-10-19 19:28:59.564  INFO 7180 --- [main] c.y.punch.PunchApplicationTests          : Starting PunchApplicationTests on etron with PID 7180 (started by etron in F:\ideaTest\punch)
+2019-10-19 19:28:59.565 DEBUG 7180 --- [main] c.y.punch.PunchApplicationTests          : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-19 19:28:59.568  INFO 7180 --- [main] c.y.punch.PunchApplicationTests          : No active profile set, falling back to default profiles: default
+2019-10-19 19:29:01.175  INFO 7180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-19 19:29:01.214  INFO 7180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+2019-10-19 19:29:01.993  INFO 7180 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c874c97a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-19 19:29:06.007  INFO 7180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 19:29:07.687  INFO 7180 --- [main] c.y.punch.PunchApplicationTests          : Started PunchApplicationTests in 9.08 seconds (JVM running for 10.409)
+2019-10-19 19:29:08.631  INFO 7180 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-19 19:29:08.636  INFO 7180 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2019-10-19 19:40:47.482  INFO 13408 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on etron with PID 13408 (F:\ideaTest\punch\target\classes started by etron in F:\ideaTest\punch)
+2019-10-19 19:40:47.485 DEBUG 13408 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-19 19:40:47.486  INFO 13408 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-10-19 19:40:47.658  INFO 13408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-19 19:40:47.658  INFO 13408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-19 19:40:49.551  INFO 13408 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-19 19:40:49.595  INFO 13408 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 0 repository interfaces.
+2019-10-19 19:40:50.318  INFO 13408 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d952f2de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-19 19:40:50.875  INFO 13408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2019-10-19 19:40:50.904  INFO 13408 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-19 19:40:50.905  INFO 13408 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-19 19:40:51.008  INFO 13408 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-19 19:40:51.009  INFO 13408 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3351 ms
+2019-10-19 19:40:52.050  INFO 13408 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-19 19:40:52.496  INFO 13408 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-19 19:40:52.548  INFO 13408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2019-10-19 19:40:52.551  INFO 13408 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 6.123 seconds (JVM running for 9.426)
+2019-10-19 19:41:09.266  INFO 13408 --- [http-nio-8083-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-19 19:41:09.266  INFO 13408 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-19 19:41:09.284  INFO 13408 --- [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-10-19 19:41:09.312  INFO 13408 --- [http-nio-8083-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/getStudentAndPunchInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.getStudentAndPunchInfo', args=[org.apache.catalina.session.StandardSessionFacade@388fc66b]}
+2019-10-19 19:41:09.317  INFO 13408 --- [http-nio-8083-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}

@@ -1,0 +1,10 @@
+2019-10-18 09:13:09.481  INFO 13384 --- [main] c.y.punch.PunchApplicationTests          : Starting PunchApplicationTests on etron with PID 13384 (started by etron in F:\ideaTest\punch)
+2019-10-18 09:13:09.491 DEBUG 13384 --- [main] c.y.punch.PunchApplicationTests          : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-18 09:13:09.494  INFO 13384 --- [main] c.y.punch.PunchApplicationTests          : No active profile set, falling back to default profiles: default
+2019-10-18 09:13:10.732  INFO 13384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-18 09:13:10.786  INFO 13384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
+2019-10-18 09:13:11.465  INFO 13384 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46342297] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-18 09:13:14.417  INFO 13384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-18 09:13:15.482  INFO 13384 --- [main] c.y.punch.PunchApplicationTests          : Started PunchApplicationTests in 6.813 seconds (JVM running for 8.165)
+2019-10-18 09:13:15.951  INFO 13384 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-18 09:13:15.954  INFO 13384 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...

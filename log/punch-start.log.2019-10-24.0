@@ -1,0 +1,952 @@
+2019-10-21 16:23:14.604  INFO 9568 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on etron with PID 9568 (F:\ideaTest\punch\target\classes started by etron in F:\ideaTest\punch)
+2019-10-21 16:23:14.611 DEBUG 9568 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 16:23:14.612  INFO 9568 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 16:23:14.835  INFO 9568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 16:23:14.837  INFO 9568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 16:23:18.097  INFO 9568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 16:23:18.140  INFO 9568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 repository interfaces.
+2019-10-21 16:23:19.897  INFO 9568 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d2b6fe29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 16:23:21.181  INFO 9568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 16:23:21.211  INFO 9568 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 16:23:21.211  INFO 9568 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 16:23:21.407  INFO 9568 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 16:23:21.408  INFO 9568 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6569 ms
+2019-10-21 16:23:22.586  INFO 9568 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 16:23:23.208  INFO 9568 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 16:23:23.324  INFO 9568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 16:23:23.332  INFO 9568 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 10.139 seconds (JVM running for 12.649)
+2019-10-21 16:30:07.065  INFO 9568 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 16:30:07.065  INFO 9568 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 16:30:07.077  INFO 9568 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-10-21 16:30:07.176  INFO 9568 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/updateStudentInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.update', args=[Student(id=0, studentID=null, password=12345678, name=null, sex=0, grade=0, photo=null, avatar=null, createTime=null, isPunch=false), org.apache.catalina.session.StandardSessionFacade@7be7f82]}
+2019-10-21 16:30:07.179  INFO 9568 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}
+2019-10-21 16:30:10.195  INFO 9568 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/updateStudentInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.update', args=[Student(id=0, studentID=null, password=12345678, name=null, sex=0, grade=0, photo=null, avatar=null, createTime=null, isPunch=false), org.apache.catalina.session.StandardSessionFacade@7be7f82]}
+2019-10-21 16:30:10.196  INFO 9568 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}
+2019-10-21 16:30:39.461  INFO 9568 --- [http-nio-8080-exec-4] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@7be7f82]}
+2019-10-21 16:30:39.729  INFO 9568 --- [http-nio-8080-exec-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-21 16:30:39.734 DEBUG 9568 --- [http-nio-8080-exec-4] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 16:30:39.854 DEBUG 9568 --- [http-nio-8080-exec-4] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 16:30:39.877 DEBUG 9568 --- [http-nio-8080-exec-4] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 16:30:39.881  INFO 9568 --- [http-nio-8080-exec-4] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 16:30:46.172  INFO 9568 --- [http-nio-8080-exec-9] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/updateStudentInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.update', args=[Student(id=0, studentID=null, password=12345678, name=null, sex=0, grade=0, photo=null, avatar=null, createTime=null, isPunch=false), org.apache.catalina.session.StandardSessionFacade@7be7f82]}
+2019-10-21 16:30:46.173 DEBUG 9568 --- [http-nio-8080-exec-9] c.y.p.m.StudentMapper.updateStudentInfo  : ==>  Preparing: UPDATE students SET password = ? WHERE studentID = ? 
+2019-10-21 16:30:46.183 DEBUG 9568 --- [http-nio-8080-exec-9] c.y.p.m.StudentMapper.updateStudentInfo  : ==> Parameters: 12345678(String), null
+2019-10-21 16:30:46.210 DEBUG 9568 --- [http-nio-8080-exec-9] c.y.p.m.StudentMapper.updateStudentInfo  : <==    Updates: 0
+2019-10-21 16:30:46.210  INFO 9568 --- [http-nio-8080-exec-9] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 16:30:48.458  INFO 9568 --- [http-nio-8080-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/updateStudentInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.update', args=[Student(id=0, studentID=null, password=12345678, name=null, sex=0, grade=0, photo=null, avatar=null, createTime=null, isPunch=false), org.apache.catalina.session.StandardSessionFacade@7be7f82]}
+2019-10-21 16:30:48.458 DEBUG 9568 --- [http-nio-8080-exec-6] c.y.p.m.StudentMapper.updateStudentInfo  : ==>  Preparing: UPDATE students SET password = ? WHERE studentID = ? 
+2019-10-21 16:30:48.459 DEBUG 9568 --- [http-nio-8080-exec-6] c.y.p.m.StudentMapper.updateStudentInfo  : ==> Parameters: 12345678(String), null
+2019-10-21 16:30:48.464 DEBUG 9568 --- [http-nio-8080-exec-6] c.y.p.m.StudentMapper.updateStudentInfo  : <==    Updates: 0
+2019-10-21 16:30:48.465  INFO 9568 --- [http-nio-8080-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 17:12:57.961  INFO 17492 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on etron with PID 17492 (F:\ideaTest\punch\target\classes started by etron in F:\ideaTest\punch)
+2019-10-21 17:12:57.964 DEBUG 17492 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 17:12:57.965  INFO 17492 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 17:12:58.131  INFO 17492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 17:12:58.132  INFO 17492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 17:12:59.564  INFO 17492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 17:12:59.600  INFO 17492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-10-21 17:13:00.195  INFO 17492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4e376437] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 17:13:01.039  INFO 17492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 17:13:01.076  INFO 17492 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 17:13:01.076  INFO 17492 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 17:13:01.217  INFO 17492 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 17:13:01.218  INFO 17492 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3086 ms
+2019-10-21 17:13:03.002  INFO 17492 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 17:13:04.298  INFO 17492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 17:13:04.413  INFO 17492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 17:13:04.419  INFO 17492 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 7.432 seconds (JVM running for 9.485)
+2019-10-21 17:13:50.120  INFO 18212 --- [main] c.y.punch.PunchApplicationTests          : Starting PunchApplicationTests on etron with PID 18212 (started by etron in F:\ideaTest\punch)
+2019-10-21 17:13:50.121 DEBUG 18212 --- [main] c.y.punch.PunchApplicationTests          : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 17:13:50.122  INFO 18212 --- [main] c.y.punch.PunchApplicationTests          : No active profile set, falling back to default profiles: default
+2019-10-21 17:13:51.706  INFO 18212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 17:13:51.757  INFO 18212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
+2019-10-21 17:13:52.642  INFO 18212 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c874c97a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 17:13:57.276  INFO 18212 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 17:13:58.605  INFO 18212 --- [main] c.y.punch.PunchApplicationTests          : Started PunchApplicationTests in 10.045 seconds (JVM running for 12.616)
+2019-10-21 17:13:59.728  INFO 18212 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 17:13:59.733  INFO 18212 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2019-10-21 17:21:24.565  INFO 14984 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on etron with PID 14984 (F:\ideaTest\punch\target\classes started by etron in F:\ideaTest\punch)
+2019-10-21 17:21:24.569 DEBUG 14984 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 17:21:24.570  INFO 14984 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 17:21:24.689  INFO 14984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 17:21:24.690  INFO 14984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 17:21:25.730  INFO 14984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 17:21:25.782  INFO 14984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 0 repository interfaces.
+2019-10-21 17:21:26.418  INFO 14984 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$66960ab4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 17:21:27.354  INFO 14984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 17:21:27.405  INFO 14984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 17:21:27.407  INFO 14984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 17:21:27.648  INFO 14984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 17:21:27.649  INFO 14984 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2958 ms
+2019-10-21 17:21:29.804  INFO 14984 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 17:21:30.597  INFO 14984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 17:21:30.654  INFO 14984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 17:21:30.659  INFO 14984 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 6.714 seconds (JVM running for 9.166)
+2019-10-21 17:22:22.208  INFO 14984 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 17:22:22.208  INFO 14984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 17:22:22.220  INFO 14984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-10-21 17:22:22.286  INFO 14984 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@47da0f4d]}
+2019-10-21 17:22:22.506  INFO 14984 --- [http-nio-8080-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-21 17:22:22.512 DEBUG 14984 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 17:22:22.608 DEBUG 14984 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 17:22:22.652 DEBUG 14984 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 17:22:24.005  INFO 14984 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 17:22:39.642  INFO 14984 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@47da0f4d, org.apache.catalina.connector.RequestFacade@6927971b]}
+2019-10-21 17:22:39.646  INFO 14984 --- [http-nio-8080-exec-3] c.yrmjhtdjxh.punch.web.IndexController   : 0:0:0:0:0:0:0:1
+2019-10-21 17:22:39.648  INFO 14984 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}
+2019-10-21 18:10:30.270  INFO 18112 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on etron with PID 18112 (F:\ideaTest\punch\target\classes started by etron in F:\ideaTest\punch)
+2019-10-21 18:10:30.273 DEBUG 18112 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 18:10:30.273  INFO 18112 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 18:10:30.541  INFO 18112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 18:10:30.543  INFO 18112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 18:10:31.460  INFO 18112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 18:10:31.486  INFO 18112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-10-21 18:10:31.962  INFO 18112 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6ca4b981] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 18:10:32.516  INFO 18112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 18:10:32.538  INFO 18112 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 18:10:32.538  INFO 18112 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 18:10:32.643  INFO 18112 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 18:10:32.643  INFO 18112 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2100 ms
+2019-10-21 18:10:33.760  INFO 18112 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 18:10:34.291  INFO 18112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 18:10:34.357  INFO 18112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 18:10:34.360  INFO 18112 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 4.925 seconds (JVM running for 6.661)
+2019-10-21 18:10:41.524  INFO 18112 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 18:10:41.525  INFO 18112 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 18:10:41.537  INFO 18112 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-10-21 18:10:41.600  INFO 18112 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@c29b296]}
+2019-10-21 18:10:41.810  INFO 18112 --- [http-nio-8080-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-21 18:10:41.816 DEBUG 18112 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 18:10:41.916 DEBUG 18112 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 18:10:41.939 DEBUG 18112 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 18:10:41.943  INFO 18112 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:10:52.632  INFO 18112 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062632}, org.apache.catalina.session.StandardSessionFacade@c29b296, org.apache.catalina.connector.RequestFacade@516da190]}
+2019-10-21 18:10:52.636  INFO 18112 --- [http-nio-8080-exec-3] c.yrmjhtdjxh.punch.web.IndexController   : 0:0:0:0:0:0:0:1
+2019-10-21 18:10:52.637  INFO 18112 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}
+2019-10-21 18:10:55.889  INFO 18112 --- [http-nio-8080-exec-4] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@c29b296]}
+2019-10-21 18:10:55.890 DEBUG 18112 --- [http-nio-8080-exec-4] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 18:10:55.891 DEBUG 18112 --- [http-nio-8080-exec-4] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 18:10:55.894 DEBUG 18112 --- [http-nio-8080-exec-4] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 18:10:55.895  INFO 18112 --- [http-nio-8080-exec-4] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:11:06.672  INFO 18112 --- [http-nio-8080-exec-5] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@c29b296, org.apache.catalina.connector.RequestFacade@516da190]}
+2019-10-21 18:11:06.672  INFO 18112 --- [http-nio-8080-exec-5] c.yrmjhtdjxh.punch.web.IndexController   : 0:0:0:0:0:0:0:1
+2019-10-21 18:11:06.672  INFO 18112 --- [http-nio-8080-exec-5] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}
+2019-10-21 18:11:55.440  INFO 18112 --- [http-nio-8080-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@c29b296]}
+2019-10-21 18:11:55.441 DEBUG 18112 --- [http-nio-8080-exec-6] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 18:11:55.441 DEBUG 18112 --- [http-nio-8080-exec-6] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 18:11:55.443 DEBUG 18112 --- [http-nio-8080-exec-6] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 18:11:55.444  INFO 18112 --- [http-nio-8080-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:12:48.147  INFO 18112 --- [http-nio-8080-exec-7] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@c29b296, org.apache.catalina.connector.RequestFacade@516da190]}
+2019-10-21 18:12:48.147  INFO 18112 --- [http-nio-8080-exec-7] c.yrmjhtdjxh.punch.web.IndexController   : 0:0:0:0:0:0:0:1
+2019-10-21 18:12:48.147  INFO 18112 --- [http-nio-8080-exec-7] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}
+2019-10-21 18:12:51.778  INFO 18112 --- [http-nio-8080-exec-8] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@c29b296, org.apache.catalina.connector.RequestFacade@516da190]}
+2019-10-21 18:12:51.779  INFO 18112 --- [http-nio-8080-exec-8] c.yrmjhtdjxh.punch.web.IndexController   : 0:0:0:0:0:0:0:1
+2019-10-21 18:12:51.779  INFO 18112 --- [http-nio-8080-exec-8] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}
+2019-10-21 18:12:59.953  INFO 18112 --- [http-nio-8080-exec-9] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@c29b296, org.apache.catalina.connector.RequestFacade@516da190]}
+2019-10-21 18:12:59.953  INFO 18112 --- [http-nio-8080-exec-9] c.yrmjhtdjxh.punch.web.IndexController   : 0:0:0:0:0:0:0:1
+2019-10-21 18:12:59.953  INFO 18112 --- [http-nio-8080-exec-9] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}
+2019-10-21 18:13:06.901  INFO 18112 --- [http-nio-8080-exec-10] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/endPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.endPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@c29b296]}
+2019-10-21 18:13:06.906 DEBUG 18112 --- [http-nio-8080-exec-10] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:13:06.909 DEBUG 18112 --- [http-nio-8080-exec-10] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:13:06.912 DEBUG 18112 --- [http-nio-8080-exec-10] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 0
+2019-10-21 18:13:06.925 ERROR 18112 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.yrmjhtdjxh.punch.web.IndexController.endPunch(IndexController.java:145)
+	at com.yrmjhtdjxh.punch.web.IndexController$$FastClassBySpringCGLIB$$dc657f6b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.yrmjhtdjxh.punch.web.IndexController$$EnhancerBySpringCGLIB$$42dd0abb.endPunch(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-21 18:13:50.609  INFO 18112 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@c29b296]}
+2019-10-21 18:13:50.610 DEBUG 18112 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 18:13:50.610 DEBUG 18112 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 18:13:50.612 DEBUG 18112 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 18:13:50.612  INFO 18112 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:13:56.768  INFO 18112 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@c29b296, org.apache.catalina.connector.RequestFacade@516da190]}
+2019-10-21 18:13:56.768  INFO 18112 --- [http-nio-8080-exec-3] c.yrmjhtdjxh.punch.web.IndexController   : 0:0:0:0:0:0:0:1
+2019-10-21 18:13:56.769 DEBUG 18112 --- [http-nio-8080-exec-3] c.y.p.m.S.updatePunchByStudentID         : ==>  Preparing: UPDATE students SET isPunch = ? WHERE studentID = ? 
+2019-10-21 18:13:56.778 DEBUG 18112 --- [http-nio-8080-exec-3] c.y.p.m.S.updatePunchByStudentID         : ==> Parameters: 1(Integer), 201731062517(Long)
+2019-10-21 18:13:56.783 DEBUG 18112 --- [http-nio-8080-exec-3] c.y.p.m.S.updatePunchByStudentID         : <==    Updates: 1
+2019-10-21 18:13:56.784 DEBUG 18112 --- [http-nio-8080-exec-3] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-10-21 18:13:56.793 DEBUG 18112 --- [http-nio-8080-exec-3] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062517(Long), 2019-10-21 18:13:56.784(Timestamp), 2019-10-21 18:13:56.784(Timestamp), 0.0(Double), 2019-10-21 18:13:56.784(Timestamp)
+2019-10-21 18:13:56.824 DEBUG 18112 --- [http-nio-8080-exec-3] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-10-21 18:13:56.824  INFO 18112 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:14:00.746  INFO 18112 --- [http-nio-8080-exec-4] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/endPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.endPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@c29b296]}
+2019-10-21 18:14:00.746 DEBUG 18112 --- [http-nio-8080-exec-4] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:14:00.747 DEBUG 18112 --- [http-nio-8080-exec-4] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:14:00.749 DEBUG 18112 --- [http-nio-8080-exec-4] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 1
+2019-10-21 18:14:00.751 DEBUG 18112 --- [http-nio-8080-exec-4] c.y.p.m.P.deleteByStudentID              : ==>  Preparing: DELET FROM punchrecord WHERE studentID = ? 
+2019-10-21 18:14:00.801 ERROR 18112 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'ELET FROM punchrecord
+        WHERE', expect IDENTIFIER, actual IDENTIFIER pos 5, line 1, column 6, token IDENTIFIER null : DELET FROM punchrecord
+        WHERE studentID = ?
+### The error may exist in file [F:\ideaTest\punch\target\classes\mapper\PunchRecordMapper.xml]
+### The error may involve com.yrmjhtdjxh.punch.mapper.PunchRecordMapper.deleteByStudentID
+### The error occurred while executing an update
+### SQL: DELET FROM punchrecord         WHERE studentID = ?
+### Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'ELET FROM punchrecord
+        WHERE', expect IDENTIFIER, actual IDENTIFIER pos 5, line 1, column 6, token IDENTIFIER null : DELET FROM punchrecord
+        WHERE studentID = ?
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: syntax error, error in :'ELET FROM punchrecord
+        WHERE', expect IDENTIFIER, actual IDENTIFIER pos 5, line 1, column 6, token IDENTIFIER null : DELET FROM punchrecord
+        WHERE studentID = ?; nested exception is java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'ELET FROM punchrecord
+        WHERE', expect IDENTIFIER, actual IDENTIFIER pos 5, line 1, column 6, token IDENTIFIER null : DELET FROM punchrecord
+        WHERE studentID = ?] with root cause
+
+com.alibaba.druid.sql.parser.ParserException: syntax error, error in :'ELET FROM punchrecord
+        WHERE', expect IDENTIFIER, actual IDENTIFIER pos 5, line 1, column 6, token IDENTIFIER null
+	at com.alibaba.druid.sql.parser.SQLParser.printError(SQLParser.java:287)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:532)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:182)
+	at com.alibaba.druid.wall.WallProvider.checkInternal(WallProvider.java:624)
+	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:578)
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:793)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:259)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(FilterAdapter.java:930)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:122)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:341)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy96.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:86)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy75.delete(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.delete(SqlSessionTemplate.java:303)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy76.deleteByStudentID(Unknown Source)
+	at com.yrmjhtdjxh.punch.service.Impl.PunchRecordServiceImpl.deleteShortPunchTime(PunchRecordServiceImpl.java:32)
+	at com.yrmjhtdjxh.punch.web.IndexController.endPunch(IndexController.java:156)
+	at com.yrmjhtdjxh.punch.web.IndexController$$FastClassBySpringCGLIB$$dc657f6b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.yrmjhtdjxh.punch.web.IndexController$$EnhancerBySpringCGLIB$$42dd0abb.endPunch(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-21 18:14:05.425  INFO 18112 --- [http-nio-8080-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/endPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.endPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@c29b296]}
+2019-10-21 18:14:05.425  INFO 18112 --- [http-nio-8080-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}
+2019-10-21 18:16:14.710  INFO 15128 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on etron with PID 15128 (F:\ideaTest\punch\target\classes started by etron in F:\ideaTest\punch)
+2019-10-21 18:16:14.714 DEBUG 15128 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 18:16:14.715  INFO 15128 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 18:16:14.858  INFO 15128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 18:16:14.859  INFO 15128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 18:16:15.704  INFO 15128 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 18:16:15.725  INFO 15128 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-10-21 18:16:16.100  INFO 15128 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$55be6d62] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 18:16:16.843  INFO 15128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 18:16:16.882  INFO 15128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 18:16:16.883  INFO 15128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 18:16:17.056  INFO 15128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 18:16:17.056  INFO 15128 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2196 ms
+2019-10-21 18:16:18.163  INFO 15128 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 18:16:18.575  INFO 15128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 18:16:18.640  INFO 15128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 18:16:18.643  INFO 15128 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 4.645 seconds (JVM running for 5.896)
+2019-10-21 18:16:44.740  INFO 15128 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 18:16:44.741  INFO 15128 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 18:16:44.762  INFO 15128 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2019-10-21 18:16:44.856  INFO 15128 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@6f0d0fcc]}
+2019-10-21 18:16:45.076  INFO 15128 --- [http-nio-8080-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-21 18:16:45.083 DEBUG 15128 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 18:16:45.184 DEBUG 15128 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 18:16:45.207 DEBUG 15128 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 18:16:45.210  INFO 15128 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:16:49.105  INFO 15128 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/endPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.endPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@6f0d0fcc]}
+2019-10-21 18:16:49.108 DEBUG 15128 --- [http-nio-8080-exec-3] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:16:49.111 DEBUG 15128 --- [http-nio-8080-exec-3] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:16:49.115 DEBUG 15128 --- [http-nio-8080-exec-3] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 1
+2019-10-21 18:16:49.116 DEBUG 15128 --- [http-nio-8080-exec-3] c.y.p.m.P.deleteByStudentID              : ==>  Preparing: DELET FROM punchrecord WHERE studentID = ? 
+2019-10-21 18:16:49.161 ERROR 15128 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error updating database.  Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'ELET FROM punchrecord
+        WHERE', expect IDENTIFIER, actual IDENTIFIER pos 5, line 1, column 6, token IDENTIFIER null : DELET FROM punchrecord
+        WHERE studentID = ?
+### The error may exist in file [F:\ideaTest\punch\target\classes\mapper\PunchRecordMapper.xml]
+### The error may involve com.yrmjhtdjxh.punch.mapper.PunchRecordMapper.deleteByStudentID
+### The error occurred while executing an update
+### SQL: DELET FROM punchrecord         WHERE studentID = ?
+### Cause: java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'ELET FROM punchrecord
+        WHERE', expect IDENTIFIER, actual IDENTIFIER pos 5, line 1, column 6, token IDENTIFIER null : DELET FROM punchrecord
+        WHERE studentID = ?
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: syntax error, error in :'ELET FROM punchrecord
+        WHERE', expect IDENTIFIER, actual IDENTIFIER pos 5, line 1, column 6, token IDENTIFIER null : DELET FROM punchrecord
+        WHERE studentID = ?; nested exception is java.sql.SQLException: sql injection violation, syntax error: syntax error, error in :'ELET FROM punchrecord
+        WHERE', expect IDENTIFIER, actual IDENTIFIER pos 5, line 1, column 6, token IDENTIFIER null : DELET FROM punchrecord
+        WHERE studentID = ?] with root cause
+
+com.alibaba.druid.sql.parser.ParserException: syntax error, error in :'ELET FROM punchrecord
+        WHERE', expect IDENTIFIER, actual IDENTIFIER pos 5, line 1, column 6, token IDENTIFIER null
+	at com.alibaba.druid.sql.parser.SQLParser.printError(SQLParser.java:287)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:532)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:182)
+	at com.alibaba.druid.wall.WallProvider.checkInternal(WallProvider.java:624)
+	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:578)
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:793)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:259)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(FilterAdapter.java:930)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:122)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:341)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy96.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:86)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy75.delete(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.delete(SqlSessionTemplate.java:303)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:57)
+	at com.sun.proxy.$Proxy76.deleteByStudentID(Unknown Source)
+	at com.yrmjhtdjxh.punch.service.Impl.PunchRecordServiceImpl.deleteShortPunchTime(PunchRecordServiceImpl.java:32)
+	at com.yrmjhtdjxh.punch.web.IndexController.endPunch(IndexController.java:158)
+	at com.yrmjhtdjxh.punch.web.IndexController$$FastClassBySpringCGLIB$$dc657f6b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.yrmjhtdjxh.punch.web.IndexController$$EnhancerBySpringCGLIB$$2cf4b6dc.endPunch(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-21 18:18:19.288  INFO 15212 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on etron with PID 15212 (F:\ideaTest\punch\target\classes started by etron in F:\ideaTest\punch)
+2019-10-21 18:18:19.291 DEBUG 15212 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 18:18:19.291  INFO 15212 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 18:18:19.429  INFO 15212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 18:18:19.430  INFO 15212 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 18:18:20.370  INFO 15212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 18:18:20.393  INFO 15212 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2019-10-21 18:18:20.818  INFO 15212 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8b81594d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 18:18:21.305  INFO 15212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 18:18:21.331  INFO 15212 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 18:18:21.331  INFO 15212 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 18:18:21.431  INFO 15212 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 18:18:21.431  INFO 15212 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2001 ms
+2019-10-21 18:18:22.571  INFO 15212 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 18:18:23.294  INFO 15212 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 18:18:23.359  INFO 15212 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 18:18:23.363  INFO 15212 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 4.923 seconds (JVM running for 7.087)
+2019-10-21 18:18:30.508  INFO 14436 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on etron with PID 14436 (F:\ideaTest\punch\target\classes started by etron in F:\ideaTest\punch)
+2019-10-21 18:18:30.524 DEBUG 14436 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 18:18:30.526  INFO 14436 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 18:18:30.677  INFO 14436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 18:18:30.677  INFO 14436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 18:18:31.883  INFO 14436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 18:18:31.910  INFO 14436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-10-21 18:18:32.299  INFO 14436 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7f03e4f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 18:18:32.807  INFO 14436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 18:18:32.830  INFO 14436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 18:18:32.831  INFO 14436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 18:18:32.929  INFO 14436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 18:18:32.929  INFO 14436 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2251 ms
+2019-10-21 18:18:33.958  INFO 14436 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 18:18:34.355  INFO 14436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 18:18:34.405  INFO 14436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 18:18:34.409  INFO 14436 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 4.747 seconds (JVM running for 6.081)
+2019-10-21 18:18:44.203  INFO 14436 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 18:18:44.204  INFO 14436 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 18:18:44.219  INFO 14436 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-10-21 18:18:44.288  INFO 14436 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@bb07a89]}
+2019-10-21 18:18:44.494  INFO 14436 --- [http-nio-8080-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-21 18:18:44.498 DEBUG 14436 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 18:18:44.597 DEBUG 14436 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 18:18:44.621 DEBUG 14436 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 18:18:44.625  INFO 14436 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:18:46.917  INFO 14436 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/endPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.endPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@bb07a89]}
+2019-10-21 18:18:46.921 DEBUG 14436 --- [http-nio-8080-exec-3] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:18:46.924 DEBUG 14436 --- [http-nio-8080-exec-3] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:18:46.927 DEBUG 14436 --- [http-nio-8080-exec-3] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 1
+2019-10-21 18:18:46.929 DEBUG 14436 --- [http-nio-8080-exec-3] c.y.p.m.P.deleteByStudentID              : ==>  Preparing: DELETE FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:18:46.934 DEBUG 14436 --- [http-nio-8080-exec-3] c.y.p.m.P.deleteByStudentID              : ==> Parameters: 201731062517(Long)
+2019-10-21 18:18:46.937 DEBUG 14436 --- [http-nio-8080-exec-3] c.y.p.m.P.deleteByStudentID              : <==    Updates: 1
+2019-10-21 18:18:46.937  INFO 14436 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{error=当前打卡时间过短，请稍后重新打卡。, status=fail}
+2019-10-21 18:19:56.710  INFO 14436 --- [http-nio-8080-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/getStudentAndPunchInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.getStudentAndPunchInfo', args=[org.apache.catalina.session.StandardSessionFacade@bb07a89]}
+2019-10-21 18:19:56.718 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.punch.mapper.StudentMapper.getOne    : ==>  Preparing: SELECT * FROM students WHERE studentID = ? 
+2019-10-21 18:19:56.719 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.punch.mapper.StudentMapper.getOne    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:19:56.722 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.punch.mapper.StudentMapper.getOne    : <==      Total: 1
+2019-10-21 18:19:56.723 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:19:56.724 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:19:56.726 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 0
+2019-10-21 18:19:56.727 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.punch.mapper.StudentMapper.getAll    : ==>  Preparing: SELECT * FROM students; 
+2019-10-21 18:19:56.729 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.punch.mapper.StudentMapper.getAll    : ==> Parameters: 
+2019-10-21 18:19:56.733 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.punch.mapper.StudentMapper.getAll    : <==      Total: 3
+2019-10-21 18:19:56.734 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 18:19:56.740 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 201731062517(Long)
+2019-10-21 18:19:56.763 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 18:19:56.766 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 18:19:56.768 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 201731062517(Long)
+2019-10-21 18:19:56.770 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 18:19:56.771 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 18:19:56.771 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 20173(Long)
+2019-10-21 18:19:56.773 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 18:19:56.775 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 18:19:56.775 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 20173(Long)
+2019-10-21 18:19:56.776 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 18:19:56.777 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 18:19:56.777 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 201731062520(Long)
+2019-10-21 18:19:56.778 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 18:19:56.780 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 18:19:56.780 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 201731062520(Long)
+2019-10-21 18:19:56.781 DEBUG 14436 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 18:19:56.782  INFO 14436 --- [http-nio-8080-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{unfinishTime=0, student=Student(id=19, studentID=201731062517, password=123456, name=曾中杰, sex=1, grade=2017, photo=http://47.102.114.0:8080/images/boyAvatar.jpg, avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, createTime=Mon Oct 14 11:31:16 CST 2019, isPunch=true), indexStudents=[IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=曾中杰, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=true), IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=xiang, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=false), IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=大大, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=false)], status=success}
+2019-10-21 18:20:07.764  INFO 14436 --- [http-nio-8080-exec-7] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@bb07a89, org.apache.catalina.connector.RequestFacade@1c22ab36]}
+2019-10-21 18:20:07.765  INFO 14436 --- [http-nio-8080-exec-7] c.yrmjhtdjxh.punch.web.IndexController   : 0:0:0:0:0:0:0:1
+2019-10-21 18:20:07.765 DEBUG 14436 --- [http-nio-8080-exec-7] c.y.p.m.S.updatePunchByStudentID         : ==>  Preparing: UPDATE students SET isPunch = ? WHERE studentID = ? 
+2019-10-21 18:20:07.770 DEBUG 14436 --- [http-nio-8080-exec-7] c.y.p.m.S.updatePunchByStudentID         : ==> Parameters: 1(Integer), 201731062517(Long)
+2019-10-21 18:20:07.773 DEBUG 14436 --- [http-nio-8080-exec-7] c.y.p.m.S.updatePunchByStudentID         : <==    Updates: 1
+2019-10-21 18:20:07.773 DEBUG 14436 --- [http-nio-8080-exec-7] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-10-21 18:20:07.781 DEBUG 14436 --- [http-nio-8080-exec-7] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062517(Long), 2019-10-21 18:20:07.773(Timestamp), 2019-10-21 18:20:07.773(Timestamp), 0.0(Double), 2019-10-21 18:20:07.773(Timestamp)
+2019-10-21 18:20:07.783 DEBUG 14436 --- [http-nio-8080-exec-7] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-10-21 18:20:07.783  INFO 14436 --- [http-nio-8080-exec-7] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:20:10.614  INFO 14436 --- [http-nio-8080-exec-8] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/getStudentAndPunchInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.getStudentAndPunchInfo', args=[org.apache.catalina.session.StandardSessionFacade@bb07a89]}
+2019-10-21 18:20:10.614 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.punch.mapper.StudentMapper.getOne    : ==>  Preparing: SELECT * FROM students WHERE studentID = ? 
+2019-10-21 18:20:10.615 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.punch.mapper.StudentMapper.getOne    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:20:10.617 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.punch.mapper.StudentMapper.getOne    : <==      Total: 1
+2019-10-21 18:20:10.618 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:20:10.618 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:20:10.621 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 1
+2019-10-21 18:20:10.623 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.punch.mapper.StudentMapper.getAll    : ==>  Preparing: SELECT * FROM students; 
+2019-10-21 18:20:10.623 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.punch.mapper.StudentMapper.getAll    : ==> Parameters: 
+2019-10-21 18:20:10.625 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.punch.mapper.StudentMapper.getAll    : <==      Total: 3
+2019-10-21 18:20:10.626 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 18:20:10.627 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 201731062517(Long)
+2019-10-21 18:20:10.628 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 18:20:10.629 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 18:20:10.630 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 201731062517(Long)
+2019-10-21 18:20:10.631 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 18:20:10.632 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 18:20:10.632 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 20173(Long)
+2019-10-21 18:20:10.633 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 18:20:10.634 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 18:20:10.634 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 20173(Long)
+2019-10-21 18:20:10.635 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 18:20:10.636 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 18:20:10.636 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 201731062520(Long)
+2019-10-21 18:20:10.637 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 18:20:10.638 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 18:20:10.639 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 201731062520(Long)
+2019-10-21 18:20:10.640 DEBUG 14436 --- [http-nio-8080-exec-8] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 18:20:10.641  INFO 14436 --- [http-nio-8080-exec-8] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{unfinishTime=2019-10-21 18:20, student=Student(id=19, studentID=201731062517, password=123456, name=曾中杰, sex=1, grade=2017, photo=http://47.102.114.0:8080/images/boyAvatar.jpg, avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, createTime=Mon Oct 14 11:31:16 CST 2019, isPunch=true), indexStudents=[IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=曾中杰, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=true), IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=xiang, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=false), IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=大大, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=false)], status=success}
+2019-10-21 18:20:19.096  INFO 14436 --- [http-nio-8080-exec-9] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/endPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.endPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@bb07a89]}
+2019-10-21 18:20:19.097 DEBUG 14436 --- [http-nio-8080-exec-9] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:20:19.098 DEBUG 14436 --- [http-nio-8080-exec-9] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:20:19.100 DEBUG 14436 --- [http-nio-8080-exec-9] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 1
+2019-10-21 18:20:19.100 DEBUG 14436 --- [http-nio-8080-exec-9] c.y.p.m.P.deleteByStudentID              : ==>  Preparing: DELETE FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:20:19.101 DEBUG 14436 --- [http-nio-8080-exec-9] c.y.p.m.P.deleteByStudentID              : ==> Parameters: 201731062517(Long)
+2019-10-21 18:20:19.105 DEBUG 14436 --- [http-nio-8080-exec-9] c.y.p.m.P.deleteByStudentID              : <==    Updates: 1
+2019-10-21 18:20:19.105  INFO 14436 --- [http-nio-8080-exec-9] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{error=当前打卡时间过短，请稍后重新打卡。, status=fail}
+2019-10-21 18:20:23.777  INFO 14436 --- [http-nio-8080-exec-10] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/getStudentAndPunchInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.getStudentAndPunchInfo', args=[org.apache.catalina.session.StandardSessionFacade@bb07a89]}
+2019-10-21 18:20:23.777 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.punch.mapper.StudentMapper.getOne    : ==>  Preparing: SELECT * FROM students WHERE studentID = ? 
+2019-10-21 18:20:23.778 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.punch.mapper.StudentMapper.getOne    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:20:23.779 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.punch.mapper.StudentMapper.getOne    : <==      Total: 1
+2019-10-21 18:20:23.780 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:20:23.780 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:20:23.781 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 0
+2019-10-21 18:20:23.782 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.punch.mapper.StudentMapper.getAll    : ==>  Preparing: SELECT * FROM students; 
+2019-10-21 18:20:23.782 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.punch.mapper.StudentMapper.getAll    : ==> Parameters: 
+2019-10-21 18:20:23.784 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.punch.mapper.StudentMapper.getAll    : <==      Total: 3
+2019-10-21 18:20:23.784 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 18:20:23.785 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 201731062517(Long)
+2019-10-21 18:20:23.786 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 18:20:23.787 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 18:20:23.788 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 201731062517(Long)
+2019-10-21 18:20:23.789 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 18:20:23.789 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 18:20:23.789 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 20173(Long)
+2019-10-21 18:20:23.796 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 18:20:23.798 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 18:20:23.799 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 20173(Long)
+2019-10-21 18:20:23.800 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 18:20:23.800 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 18:20:23.801 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 201731062520(Long)
+2019-10-21 18:20:23.802 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 18:20:23.803 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 18:20:23.803 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 201731062520(Long)
+2019-10-21 18:20:23.804 DEBUG 14436 --- [http-nio-8080-exec-10] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 18:20:23.804  INFO 14436 --- [http-nio-8080-exec-10] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{unfinishTime=0, student=Student(id=19, studentID=201731062517, password=123456, name=曾中杰, sex=1, grade=2017, photo=http://47.102.114.0:8080/images/boyAvatar.jpg, avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, createTime=Mon Oct 14 11:31:16 CST 2019, isPunch=true), indexStudents=[IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=曾中杰, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=true), IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=xiang, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=false), IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=大大, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=false)], status=success}
+2019-10-21 18:30:15.219  INFO 17468 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on etron with PID 17468 (F:\ideaTest\punch\target\classes started by etron in F:\ideaTest\punch)
+2019-10-21 18:30:15.225 DEBUG 17468 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 18:30:15.225  INFO 17468 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 18:30:15.376  INFO 17468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 18:30:15.376  INFO 17468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 18:30:16.483  INFO 17468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 18:30:16.517  INFO 17468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+2019-10-21 18:30:17.153  INFO 17468 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$74827cb5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 18:30:17.934  INFO 17468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 18:30:17.966  INFO 17468 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 18:30:17.967  INFO 17468 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 18:30:18.056  INFO 17468 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 18:30:18.056  INFO 17468 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2680 ms
+2019-10-21 18:30:18.916  INFO 17468 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 18:30:19.325  INFO 17468 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 18:30:19.388  INFO 17468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 18:30:19.392  INFO 17468 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 4.825 seconds (JVM running for 6.295)
+2019-10-21 18:30:26.384  INFO 17468 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 18:30:26.384  INFO 17468 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 18:30:26.397  INFO 17468 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-10-21 18:30:26.466  INFO 17468 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@3131a2e4]}
+2019-10-21 18:30:26.669  INFO 17468 --- [http-nio-8080-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-21 18:30:26.674 DEBUG 17468 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 18:30:26.796 DEBUG 17468 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 18:30:26.821 DEBUG 17468 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 18:30:26.824  INFO 17468 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:30:32.079  INFO 17468 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@3131a2e4, org.apache.catalina.connector.RequestFacade@4427d780]}
+2019-10-21 18:30:32.082  INFO 17468 --- [http-nio-8080-exec-3] c.yrmjhtdjxh.punch.web.IndexController   : 0:0:0:0:0:0:0:1
+2019-10-21 18:30:32.083  INFO 17468 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}
+2019-10-21 18:30:41.479  INFO 17468 --- [http-nio-8080-exec-4] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/endPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.endPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@3131a2e4]}
+2019-10-21 18:30:41.480 DEBUG 17468 --- [http-nio-8080-exec-4] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:30:41.483 DEBUG 17468 --- [http-nio-8080-exec-4] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:30:41.486 DEBUG 17468 --- [http-nio-8080-exec-4] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 0
+2019-10-21 18:30:41.486  INFO 17468 --- [http-nio-8080-exec-4] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}
+2019-10-21 18:30:53.632  INFO 17468 --- [http-nio-8080-exec-5] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@3131a2e4]}
+2019-10-21 18:30:53.632 DEBUG 17468 --- [http-nio-8080-exec-5] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 18:30:53.633 DEBUG 17468 --- [http-nio-8080-exec-5] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 18:30:53.636 DEBUG 17468 --- [http-nio-8080-exec-5] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 18:30:53.637  INFO 17468 --- [http-nio-8080-exec-5] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:31:25.135  INFO 17468 --- [http-nio-8080-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/getStudentAndPunchInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.getStudentAndPunchInfo', args=[org.apache.catalina.session.StandardSessionFacade@3131a2e4]}
+2019-10-21 18:31:25.137 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.punch.mapper.StudentMapper.getOne    : ==>  Preparing: SELECT * FROM students WHERE studentID = ? 
+2019-10-21 18:31:25.138 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.punch.mapper.StudentMapper.getOne    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:31:25.140 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.punch.mapper.StudentMapper.getOne    : <==      Total: 1
+2019-10-21 18:31:25.141 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:31:25.142 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:31:25.143 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 0
+2019-10-21 18:31:25.145 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.punch.mapper.StudentMapper.getAll    : ==>  Preparing: SELECT * FROM students; 
+2019-10-21 18:31:25.147 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.punch.mapper.StudentMapper.getAll    : ==> Parameters: 
+2019-10-21 18:31:25.151 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.punch.mapper.StudentMapper.getAll    : <==      Total: 3
+2019-10-21 18:31:25.153 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 18:31:25.159 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 201731062517(Long)
+2019-10-21 18:31:25.161 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 18:31:25.164 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 18:31:25.165 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 201731062517(Long)
+2019-10-21 18:31:25.168 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 18:31:25.170 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 18:31:25.170 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 20173(Long)
+2019-10-21 18:31:25.175 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 18:31:25.176 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 18:31:25.176 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 20173(Long)
+2019-10-21 18:31:25.177 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 18:31:25.177 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 18:31:25.177 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 201731062520(Long)
+2019-10-21 18:31:25.179 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 18:31:25.179 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 18:31:25.180 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 201731062520(Long)
+2019-10-21 18:31:25.180 DEBUG 17468 --- [http-nio-8080-exec-6] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 18:31:25.181  INFO 17468 --- [http-nio-8080-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{unfinishTime=0, student=Student(id=19, studentID=201731062517, password=123456, name=曾中杰, sex=1, grade=2017, photo=http://47.102.114.0:8080/images/boyAvatar.jpg, avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, createTime=Mon Oct 14 11:31:16 CST 2019, isPunch=true), indexStudents=[IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=曾中杰, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=true), IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=xiang, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=false), IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=大大, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=false)], status=success}
+2019-10-21 18:32:34.824  INFO 17464 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on etron with PID 17464 (F:\ideaTest\punch\target\classes started by etron in F:\ideaTest\punch)
+2019-10-21 18:32:34.828 DEBUG 17464 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 18:32:34.829  INFO 17464 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 18:32:34.951  INFO 17464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 18:32:34.952  INFO 17464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 18:32:35.883  INFO 17464 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 18:32:35.902  INFO 17464 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-10-21 18:32:36.207  INFO 17464 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$256ba2ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 18:32:36.639  INFO 17464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 18:32:36.669  INFO 17464 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 18:32:36.669  INFO 17464 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 18:32:36.778  INFO 17464 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 18:32:36.778  INFO 17464 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1824 ms
+2019-10-21 18:32:38.435  INFO 17464 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 18:32:38.979  INFO 17464 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 18:32:39.050  INFO 17464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 18:32:39.055  INFO 17464 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 4.85 seconds (JVM running for 6.498)
+2019-10-21 18:32:42.243  INFO 17464 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 18:32:42.244  INFO 17464 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 18:32:42.255  INFO 17464 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-10-21 18:32:42.314  INFO 17464 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@701df037]}
+2019-10-21 18:32:42.496  INFO 17464 --- [http-nio-8080-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-21 18:32:42.500 DEBUG 17464 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 18:32:42.623 DEBUG 17464 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 18:32:42.656 DEBUG 17464 --- [http-nio-8080-exec-2] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 18:32:42.663  INFO 17464 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:32:48.467  INFO 17464 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@701df037, org.apache.catalina.connector.RequestFacade@30300225]}
+2019-10-21 18:32:48.471  INFO 17464 --- [http-nio-8080-exec-3] c.yrmjhtdjxh.punch.web.IndexController   : 0:0:0:0:0:0:0:1
+2019-10-21 18:32:48.472 DEBUG 17464 --- [http-nio-8080-exec-3] c.y.p.m.S.updatePunchByStudentID         : ==>  Preparing: UPDATE students SET isPunch = ? WHERE studentID = ? 
+2019-10-21 18:32:48.480 DEBUG 17464 --- [http-nio-8080-exec-3] c.y.p.m.S.updatePunchByStudentID         : ==> Parameters: 1(Integer), 201731062517(Long)
+2019-10-21 18:32:48.484 DEBUG 17464 --- [http-nio-8080-exec-3] c.y.p.m.S.updatePunchByStudentID         : <==    Updates: 1
+2019-10-21 18:32:48.484 DEBUG 17464 --- [http-nio-8080-exec-3] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-10-21 18:32:48.492 DEBUG 17464 --- [http-nio-8080-exec-3] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062517(Long), 2019-10-21 18:32:48.484(Timestamp), 2019-10-21 18:32:48.484(Timestamp), 0.0(Double), 2019-10-21 18:32:48.484(Timestamp)
+2019-10-21 18:32:48.496 DEBUG 17464 --- [http-nio-8080-exec-3] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-10-21 18:32:48.496  INFO 17464 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:32:54.795  INFO 17464 --- [http-nio-8080-exec-4] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/endPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.endPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@701df037]}
+2019-10-21 18:32:54.796 DEBUG 17464 --- [http-nio-8080-exec-4] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:32:54.798 DEBUG 17464 --- [http-nio-8080-exec-4] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:32:54.800 DEBUG 17464 --- [http-nio-8080-exec-4] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 1
+2019-10-21 18:32:54.801 DEBUG 17464 --- [http-nio-8080-exec-4] c.y.p.m.S.updatePunchByStudentID         : ==>  Preparing: UPDATE students SET isPunch = ? WHERE studentID = ? 
+2019-10-21 18:32:54.802 DEBUG 17464 --- [http-nio-8080-exec-4] c.y.p.m.S.updatePunchByStudentID         : ==> Parameters: 0(Integer), 201731062517(Long)
+2019-10-21 18:32:54.805 DEBUG 17464 --- [http-nio-8080-exec-4] c.y.p.m.S.updatePunchByStudentID         : <==    Updates: 1
+2019-10-21 18:32:54.805 DEBUG 17464 --- [http-nio-8080-exec-4] c.y.p.m.P.deleteByStudentID              : ==>  Preparing: DELETE FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:32:54.807 DEBUG 17464 --- [http-nio-8080-exec-4] c.y.p.m.P.deleteByStudentID              : ==> Parameters: 201731062517(Long)
+2019-10-21 18:32:54.809 DEBUG 17464 --- [http-nio-8080-exec-4] c.y.p.m.P.deleteByStudentID              : <==    Updates: 1
+2019-10-21 18:32:54.810  INFO 17464 --- [http-nio-8080-exec-4] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{error=当前打卡时间过短小于半小时或者识别为隔天打卡记录，请稍后重新打卡。, status=fail}
+2019-10-21 18:33:01.596  INFO 17464 --- [http-nio-8080-exec-5] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@701df037, org.apache.catalina.connector.RequestFacade@30300225]}
+2019-10-21 18:33:01.596  INFO 17464 --- [http-nio-8080-exec-5] c.yrmjhtdjxh.punch.web.IndexController   : 0:0:0:0:0:0:0:1
+2019-10-21 18:33:01.596 DEBUG 17464 --- [http-nio-8080-exec-5] c.y.p.m.S.updatePunchByStudentID         : ==>  Preparing: UPDATE students SET isPunch = ? WHERE studentID = ? 
+2019-10-21 18:33:01.597 DEBUG 17464 --- [http-nio-8080-exec-5] c.y.p.m.S.updatePunchByStudentID         : ==> Parameters: 1(Integer), 201731062517(Long)
+2019-10-21 18:33:01.602 DEBUG 17464 --- [http-nio-8080-exec-5] c.y.p.m.S.updatePunchByStudentID         : <==    Updates: 1
+2019-10-21 18:33:01.603 DEBUG 17464 --- [http-nio-8080-exec-5] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-10-21 18:33:01.604 DEBUG 17464 --- [http-nio-8080-exec-5] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062517(Long), 2019-10-21 18:33:01.603(Timestamp), 2019-10-21 18:33:01.603(Timestamp), 0.0(Double), 2019-10-21 18:33:01.603(Timestamp)
+2019-10-21 18:33:01.607 DEBUG 17464 --- [http-nio-8080-exec-5] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-10-21 18:33:01.607  INFO 17464 --- [http-nio-8080-exec-5] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 18:33:25.823  INFO 17464 --- [http-nio-8080-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/endPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.endPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@701df037]}
+2019-10-21 18:33:25.824 DEBUG 17464 --- [http-nio-8080-exec-6] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:33:25.824 DEBUG 17464 --- [http-nio-8080-exec-6] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 18:33:25.826 DEBUG 17464 --- [http-nio-8080-exec-6] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 1
+2019-10-21 18:33:25.827 DEBUG 17464 --- [http-nio-8080-exec-6] c.y.p.m.S.updatePunchByStudentID         : ==>  Preparing: UPDATE students SET isPunch = ? WHERE studentID = ? 
+2019-10-21 18:33:25.827 DEBUG 17464 --- [http-nio-8080-exec-6] c.y.p.m.S.updatePunchByStudentID         : ==> Parameters: 0(Integer), 201731062517(Long)
+2019-10-21 18:33:25.829 DEBUG 17464 --- [http-nio-8080-exec-6] c.y.p.m.S.updatePunchByStudentID         : <==    Updates: 1
+2019-10-21 18:33:25.830 DEBUG 17464 --- [http-nio-8080-exec-6] c.y.p.m.P.deleteByStudentID              : ==>  Preparing: DELETE FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 18:33:25.830 DEBUG 17464 --- [http-nio-8080-exec-6] c.y.p.m.P.deleteByStudentID              : ==> Parameters: 201731062517(Long)
+2019-10-21 18:33:25.833 DEBUG 17464 --- [http-nio-8080-exec-6] c.y.p.m.P.deleteByStudentID              : <==    Updates: 1
+2019-10-21 18:33:25.833  INFO 17464 --- [http-nio-8080-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{error=当前打卡时间过短小于半小时或者识别为隔天打卡记录，请稍后重新打卡。, status=fail}
+2019-10-21 19:29:19.445  INFO 17464 --- [http-nio-8080-exec-9] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/endPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.endPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@4fa4ecac]}
+2019-10-21 19:29:19.489 DEBUG 17464 --- [http-nio-8080-exec-9] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 19:29:19.491 DEBUG 17464 --- [http-nio-8080-exec-9] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 19:29:19.506 DEBUG 17464 --- [http-nio-8080-exec-9] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 0
+2019-10-21 19:29:19.507  INFO 17464 --- [http-nio-8080-exec-9] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=fail}
+2019-10-21 19:29:24.080  INFO 17464 --- [http-nio-8080-exec-10] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@4fa4ecac]}
+2019-10-21 19:29:24.081 DEBUG 17464 --- [http-nio-8080-exec-10] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 19:29:24.081 DEBUG 17464 --- [http-nio-8080-exec-10] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 19:29:24.087 DEBUG 17464 --- [http-nio-8080-exec-10] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 19:29:24.087  INFO 17464 --- [http-nio-8080-exec-10] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 19:29:27.707  INFO 17464 --- [http-nio-8080-exec-1] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@4fa4ecac, org.apache.catalina.connector.RequestFacade@3de6a21f]}
+2019-10-21 19:29:27.707  INFO 17464 --- [http-nio-8080-exec-1] c.yrmjhtdjxh.punch.web.IndexController   : 0:0:0:0:0:0:0:1
+2019-10-21 19:29:27.708 DEBUG 17464 --- [http-nio-8080-exec-1] c.y.p.m.S.updatePunchByStudentID         : ==>  Preparing: UPDATE students SET isPunch = ? WHERE studentID = ? 
+2019-10-21 19:29:27.708 DEBUG 17464 --- [http-nio-8080-exec-1] c.y.p.m.S.updatePunchByStudentID         : ==> Parameters: 1(Integer), 201731062517(Long)
+2019-10-21 19:29:27.713 DEBUG 17464 --- [http-nio-8080-exec-1] c.y.p.m.S.updatePunchByStudentID         : <==    Updates: 1
+2019-10-21 19:29:27.714 DEBUG 17464 --- [http-nio-8080-exec-1] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-10-21 19:29:27.715 DEBUG 17464 --- [http-nio-8080-exec-1] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062517(Long), 2019-10-21 19:29:27.714(Timestamp), 2019-10-21 19:29:27.714(Timestamp), 0.0(Double), 2019-10-21 19:29:27.714(Timestamp)
+2019-10-21 19:29:27.718 DEBUG 17464 --- [http-nio-8080-exec-1] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-10-21 19:29:27.718  INFO 17464 --- [http-nio-8080-exec-1] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 19:30:15.013  INFO 17464 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/endPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.endPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@4fa4ecac]}
+2019-10-21 19:30:15.014 DEBUG 17464 --- [http-nio-8080-exec-2] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 19:30:15.015 DEBUG 17464 --- [http-nio-8080-exec-2] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 19:30:15.019 DEBUG 17464 --- [http-nio-8080-exec-2] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 1
+2019-10-21 19:30:15.021 DEBUG 17464 --- [http-nio-8080-exec-2] c.y.p.m.P.endPunchRecord                 : ==>  Preparing: UPDATE punchrecord SET endPunchTime = ?,recordTime = ? WHERE studentID = ? AND recordTime = 0 AND endPunchTime = ?; 
+2019-10-21 19:30:15.028 DEBUG 17464 --- [http-nio-8080-exec-2] c.y.p.m.P.endPunchRecord                 : ==> Parameters: 2019-10-21 19:30:15.02(Timestamp), 1.02(Double), 201731062517(Long), 2019-10-21 18:29:28.0(Timestamp)
+2019-10-21 19:30:15.031 DEBUG 17464 --- [http-nio-8080-exec-2] c.y.p.m.P.endPunchRecord                 : <==    Updates: 1
+2019-10-21 19:30:15.032 DEBUG 17464 --- [http-nio-8080-exec-2] c.y.p.m.S.updatePunchByStudentID         : ==>  Preparing: UPDATE students SET isPunch = ? WHERE studentID = ? 
+2019-10-21 19:30:15.032 DEBUG 17464 --- [http-nio-8080-exec-2] c.y.p.m.S.updatePunchByStudentID         : ==> Parameters: 0(Integer), 201731062517(Long)
+2019-10-21 19:30:15.036 DEBUG 17464 --- [http-nio-8080-exec-2] c.y.p.m.S.updatePunchByStudentID         : <==    Updates: 1
+2019-10-21 19:30:15.036  INFO 17464 --- [http-nio-8080-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 19:32:22.612  INFO 14676 --- [main] c.y.punch.PunchApplicationTests          : Starting PunchApplicationTests on etron with PID 14676 (started by etron in F:\ideaTest\punch)
+2019-10-21 19:32:22.614 DEBUG 14676 --- [main] c.y.punch.PunchApplicationTests          : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 19:32:22.615  INFO 14676 --- [main] c.y.punch.PunchApplicationTests          : No active profile set, falling back to default profiles: default
+2019-10-21 19:32:24.480  INFO 14676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:32:24.507  INFO 14676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-10-21 19:32:25.219  INFO 14676 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ccd05162] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:32:28.760  INFO 14676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:32:30.313  INFO 14676 --- [main] c.y.punch.PunchApplicationTests          : Started PunchApplicationTests in 8.741 seconds (JVM running for 10.276)
+2019-10-21 19:32:30.996  INFO 14676 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:32:31.005  INFO 14676 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2019-10-21 19:57:56.549  INFO 4532 --- [main] c.y.punch.PunchApplicationTests          : Starting PunchApplicationTests on etron with PID 4532 (started by etron in F:\ideaTest\punch)
+2019-10-21 19:57:56.550 DEBUG 4532 --- [main] c.y.punch.PunchApplicationTests          : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 19:57:56.552  INFO 4532 --- [main] c.y.punch.PunchApplicationTests          : No active profile set, falling back to default profiles: default
+2019-10-21 19:57:57.689  INFO 4532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 19:57:57.727  INFO 4532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+2019-10-21 19:57:58.411  INFO 4532 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$85fc9ce4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 19:58:01.347  INFO 4532 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:58:02.397  INFO 4532 --- [main] c.y.punch.PunchApplicationTests          : Started PunchApplicationTests in 6.503 seconds (JVM running for 7.506)
+2019-10-21 19:58:02.757  INFO 4532 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 19:58:02.765  INFO 4532 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2019-10-21 22:10:51.001  INFO 10772 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on etron with PID 10772 (F:\ideaTest\punch\target\classes started by etron in F:\ideaTest\punch)
+2019-10-21 22:10:51.038 DEBUG 10772 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 22:10:51.039  INFO 10772 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-10-21 22:10:51.342  INFO 10772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-21 22:10:51.342  INFO 10772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-21 22:10:52.935  INFO 10772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 22:10:52.961  INFO 10772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-10-21 22:10:53.454  INFO 10772 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$af1b534f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 22:10:54.158  INFO 10772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 22:10:54.190  INFO 10772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 22:10:54.190  INFO 10772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 22:10:54.315  INFO 10772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 22:10:54.315  INFO 10772 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2973 ms
+2019-10-21 22:10:55.776  INFO 10772 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 22:10:56.624  INFO 10772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-21 22:10:56.718  INFO 10772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 22:10:56.723  INFO 10772 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 6.863 seconds (JVM running for 8.912)
+2019-10-21 22:11:44.524  INFO 10772 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 22:11:44.524  INFO 10772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 22:11:44.535  INFO 10772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-10-21 22:11:44.616  INFO 10772 --- [http-nio-8080-exec-1] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062517, password=123456}, org.apache.catalina.session.StandardSessionFacade@7ea3895a]}
+2019-10-21 22:11:44.950  INFO 10772 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-10-21 22:11:44.959 DEBUG 10772 --- [http-nio-8080-exec-1] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT * FROM students WHERE studentID = ? AND password = ? 
+2019-10-21 22:11:45.123 DEBUG 10772 --- [http-nio-8080-exec-1] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062517(Long), 123456(String)
+2019-10-21 22:11:45.220 DEBUG 10772 --- [http-nio-8080-exec-1] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-10-21 22:11:45.224  INFO 10772 --- [http-nio-8080-exec-1] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-10-21 22:11:57.352  INFO 10772 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/getStudentAndPunchInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.getStudentAndPunchInfo', args=[org.apache.catalina.session.StandardSessionFacade@7ea3895a]}
+2019-10-21 22:11:57.356 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.punch.mapper.StudentMapper.getOne    : ==>  Preparing: SELECT * FROM students WHERE studentID = ? 
+2019-10-21 22:11:57.357 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.punch.mapper.StudentMapper.getOne    : ==> Parameters: 201731062517(Long)
+2019-10-21 22:11:57.362 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.punch.mapper.StudentMapper.getOne    : <==      Total: 1
+2019-10-21 22:11:57.363 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT * FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-10-21 22:11:57.367 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062517(Long)
+2019-10-21 22:11:57.370 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 0
+2019-10-21 22:11:57.371 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.punch.mapper.StudentMapper.getAll    : ==>  Preparing: SELECT * FROM students; 
+2019-10-21 22:11:57.373 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.punch.mapper.StudentMapper.getAll    : ==> Parameters: 
+2019-10-21 22:11:57.377 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.punch.mapper.StudentMapper.getAll    : <==      Total: 3
+2019-10-21 22:11:57.378 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 22:11:57.383 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 201731062517(Long)
+2019-10-21 22:11:57.388 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 22:11:57.390 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 22:11:57.392 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 201731062517(Long)
+2019-10-21 22:11:57.395 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 22:11:57.396 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 22:11:57.396 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 20173(Long)
+2019-10-21 22:11:57.397 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 22:11:57.398 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 22:11:57.399 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 20173(Long)
+2019-10-21 22:11:57.400 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 22:11:57.401 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-10-21 22:11:57.401 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 201731062520(Long)
+2019-10-21 22:11:57.402 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-10-21 22:11:57.403 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-10-21 22:11:57.403 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-10-21(String), 2019-10-28(String), 201731062520(Long)
+2019-10-21 22:11:57.404 DEBUG 10772 --- [http-nio-8080-exec-3] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-10-21 22:11:57.405  INFO 10772 --- [http-nio-8080-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{unfinishTime=0, student=Student(id=19, studentID=201731062517, password=123456, name=曾中杰, sex=1, grade=2017, photo=http://47.102.114.0:8080/images/boyAvatar.jpg, avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, createTime=Mon Oct 14 11:31:16 CST 2019, isPunch=false), indexStudents=[IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=曾中杰, grade=2017, weekTime=1.03, todayTime=1.03, weekLeftTime=26.97, isPunch=false), IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=xiang, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=false), IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=大大, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=false)], status=success}
+2019-10-21 22:12:05.978  INFO 10772 --- [http-nio-8080-exec-4] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@7ea3895a, org.apache.catalina.connector.RequestFacade@5e6e1514]}
+2019-10-21 22:12:05.979  INFO 10772 --- [http-nio-8080-exec-4] c.yrmjhtdjxh.punch.web.IndexController   : 当前的IP地址为：0:0:0:0:0:0:0:1是否等于125.70.254.67
+2019-10-21 22:12:05.979  INFO 10772 --- [http-nio-8080-exec-4] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{msg=请尝试连接LC2，并且拔出网线重试打卡, status=fail}
+2019-10-21 22:12:32.658  INFO 10772 --- [http-nio-8080-exec-5] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/startPunch', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.IndexController.startPunch', args=[{studentID=201731062517}, org.apache.catalina.session.StandardSessionFacade@7ea3895a, org.apache.catalina.connector.RequestFacade@5e6e1514]}
+2019-10-21 22:12:32.660  INFO 10772 --- [http-nio-8080-exec-5] c.yrmjhtdjxh.punch.web.IndexController   : 当前的IP地址为：0:0:0:0:0:0:0:1是否等于125.70.254.67
+2019-10-21 22:12:32.660  INFO 10772 --- [http-nio-8080-exec-5] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{msg=请尝试连接LC2，并且拔出网线重试打卡, status=fail}
+2019-10-21 22:14:19.793  INFO 18360 --- [main] c.y.punch.PunchApplicationTests          : Starting PunchApplicationTests on etron with PID 18360 (started by etron in F:\ideaTest\punch)
+2019-10-21 22:14:19.794 DEBUG 18360 --- [main] c.y.punch.PunchApplicationTests          : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 22:14:19.795  INFO 18360 --- [main] c.y.punch.PunchApplicationTests          : No active profile set, falling back to default profiles: default
+2019-10-21 22:14:21.499  INFO 18360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 22:14:21.536  INFO 18360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2019-10-21 22:14:22.516  INFO 18360 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c30d03b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 22:14:26.538  INFO 18360 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 22:14:28.148  INFO 18360 --- [main] c.y.punch.PunchApplicationTests          : Started PunchApplicationTests in 9.254 seconds (JVM running for 10.938)
+2019-10-21 22:14:28.872  INFO 18360 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 22:14:28.876  INFO 18360 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2019-10-21 22:40:20.791  INFO 18204 --- [main] c.y.punch.PunchApplicationTests          : Starting PunchApplicationTests on etron with PID 18204 (started by etron in F:\ideaTest\punch)
+2019-10-21 22:40:20.818 DEBUG 18204 --- [main] c.y.punch.PunchApplicationTests          : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-21 22:40:20.820  INFO 18204 --- [main] c.y.punch.PunchApplicationTests          : No active profile set, falling back to default profiles: default
+2019-10-21 22:40:23.119  INFO 18204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-21 22:40:23.166  INFO 18204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
+2019-10-21 22:40:24.352  INFO 18204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90039060] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-21 22:40:30.050  INFO 18204 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-21 22:40:32.147  INFO 18204 --- [main] c.y.punch.PunchApplicationTests          : Started PunchApplicationTests in 12.792 seconds (JVM running for 14.431)
+2019-10-21 22:40:33.299  INFO 18204 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-21 22:40:33.302  INFO 18204 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
