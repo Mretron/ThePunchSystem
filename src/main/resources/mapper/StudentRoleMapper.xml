@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yrmjhtdjxh.punch.mapper.StudentRoleMapper">
+  <insert id="insert">
+    insert into student_role(user_id, user_role) values (#{userId},#{userRole})
+  </insert>
+  <update id="updateUserRole">
+    update student_role set user_role = #{userRole} where user_id = #{userId}
+  </update>
+    <delete id="deleteByUserId">
+      delete from student_role where user_id = #{userId}
+    </delete>
+
+    <select id="getOneByUserId" resultType="com.yrmjhtdjxh.punch.domain.StudentRole">
+    select user_id as userId,user_role as userRole from student_role where user_id = #{userId}
+  </select>
+</mapper>

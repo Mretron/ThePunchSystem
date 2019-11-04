@@ -45,18 +45,22 @@ public class PunchRecordServiceImpl implements PunchRecordService {
     @Autowired
     private StudentMapper studentMapper;
 
+    @Override
     public void insert(PunchRecord punchRecord) {
         punchRecordMapper.insert(punchRecord);
     }
 
+    @Override
     public PunchRecord getUnfinishPunchByStudnetID(Long studentID) {
         return punchRecordMapper.getUnfinishPunchByStudnetID(studentID);
     }
 
+    @Override
     public void endRecordTime(PunchRecord punchRecord) {
         punchRecordMapper.endPunchRecord(punchRecord);
     }
 
+    @Override
     public void deleteShortPunchTime(Long studentID) {
         punchRecordMapper.deleteByStudentID(studentID);
     }

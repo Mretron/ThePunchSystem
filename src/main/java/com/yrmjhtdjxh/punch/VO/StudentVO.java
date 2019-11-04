@@ -1,10 +1,9 @@
-package com.yrmjhtdjxh.punch.domain;
+package com.yrmjhtdjxh.punch.VO;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.AllArgsConstructor;
+import com.yrmjhtdjxh.punch.domain.Student;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 
@@ -13,10 +12,12 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
+/**
+ * @author dengg
+ */
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class Student {
+public class StudentVO extends Student{
+
     /**
      * 作为自增主键
      */
@@ -33,7 +34,6 @@ public class Student {
     /**
      * 密码
      */
-    @JsonIgnore
     private String password;
 
     /**
@@ -75,6 +75,8 @@ public class Student {
      * 是否在打卡
      */
     private boolean isPunch;
+
+    private Integer userRole;
 
 
 }

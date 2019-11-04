@@ -3,6 +3,9 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.yrmjhtdjxh.punch.mapper.StudentMapper">
+    <delete id="deleteStudentByUserId">
+        delete from students where studentID = #{userId}
+    </delete>
     <select id="getOne" parameterType="Long" resultType="com.yrmjhtdjxh.punch.domain.Student">
         SELECT * FROM students WHERE studentID = #{studentID}
     </select>
@@ -13,11 +16,19 @@
         VALUES
             (#{id}, #{studentID},  #{password},  #{name}, #{sex},  #{grade},  #{photo},  #{avatar},  #{createTime},  #{isPunch})
     </insert>
-    <select id="findStudentByStudentIDAndPassword"  resultType="com.yrmjhtdjxh.punch.domain.Student">
-        SELECT * FROM students WHERE studentID = #{studentID} AND password = #{password}
+    <select id="findStudentByStudentIDAndPassword"  resultType="com.yrmjhtdjxh.punch.VO.StudentVO">
+        SELECT student_role.user_role as userRole,id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch
+        FROM students INNER JOIN student_role ON student_role.user_id = students.studentID
+        WHERE studentID = #{studentID} AND password = #{password}
     </select>
-    <select id="getAll" resultType="com.yrmjhtdjxh.punch.domain.Student">
-        SELECT * FROM students;
+    <select id="getAllByRole" resultType="com.yrmjhtdjxh.punch.VO.StudentVO">
+        SELECT student_role.user_role as userRole,id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch FROM students
+        INNER JOIN student_role ON student_role.user_id = studentID
+        <where>
+            <if test="userRole!=null">
+                user_role = #{userRole}
+            </if>
+        </where>
     </select>
     <update id="updatePunchByStudentID">
         UPDATE students
