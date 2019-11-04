@@ -1,31 +1,62 @@
 package com.yrmjhtdjxh.punch.service.Impl;
 
 import com.yrmjhtdjxh.punch.domain.IndexStudent;
+import com.yrmjhtdjxh.punch.domain.PunchRecord;
 import com.yrmjhtdjxh.punch.domain.Student;
 import com.yrmjhtdjxh.punch.mapper.PunchRecordMapper;
 import com.yrmjhtdjxh.punch.mapper.StudentMapper;
+import com.yrmjhtdjxh.punch.service.PunchRecordService;
 import com.yrmjhtdjxh.punch.service.StudentAndPunchRecordService;
 import com.yrmjhtdjxh.punch.util.GetWeekUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpSession;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 @Service
 public class StudentAndPunchRecordServiceImpl implements StudentAndPunchRecordService {
 
 
-    @Autowired
     private StudentMapper studentMapper;
+    private PunchRecordMapper punchRecordMapper;
+    private PunchRecordService punchRecordService;
 
     @Autowired
-    private PunchRecordMapper punchRecordMapper;
+    public StudentAndPunchRecordServiceImpl(StudentMapper studentMapper, PunchRecordMapper punchRecordMapper,
+                                            PunchRecordService punchRecordService) {
+        this.studentMapper = studentMapper;
+        this.punchRecordMapper = punchRecordMapper;
+        this.punchRecordService = punchRecordService;
+    }
 
+    @Override
+    public Map<String, Object> getStudentAndPunchInfo(HttpSession session) {
+        Map<String, Object> map = new HashMap<>();
+        Student student = (Student) session.getAttribute("student");
+        if(student != null) {
+            // 取出当前学生的信息
+            map.put("status", "success");
+            map.put("student", studentMapper.getOne(student.getStudentID()));
+            // 如果有未完成的打卡记录放入
+            PunchRecord punchRecord = punchRecordService.getUnfinishPunchByStudnetID(student.getStudentID());
+            if(punchRecord == null) {
+                map.put("unfinishTime", 0);
+            } else {
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("YYYY-MM-dd HH:mm");
+                map.put("unfinishTime", simpleDateFormat.format(punchRecord.getBeginPunchTime()));
+            }
+        }else {
+            map.put("status", "fail");
+            return map;
+        }
+        // 取出首页包装好的时间排名类
+        List<IndexStudent> indexStudents = getSort();
+        map.put("indexStudents", indexStudents);
+        return map;
+    }
 
     /**
      * 将学生List全部取出来
@@ -35,7 +66,6 @@ public class StudentAndPunchRecordServiceImpl implements StudentAndPunchRecordSe
      * 返回即可
      * @return
      */
-    @Override
     public List<IndexStudent> getSort() {
 
         List<IndexStudent> list = new ArrayList<>();

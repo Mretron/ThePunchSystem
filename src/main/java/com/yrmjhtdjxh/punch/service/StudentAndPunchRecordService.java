@@ -1,11 +1,9 @@
 package com.yrmjhtdjxh.punch.service;
 
-import com.yrmjhtdjxh.punch.domain.IndexStudent;
-
-import java.util.List;
+import javax.servlet.http.HttpSession;
+import java.util.Map;
 
 public interface StudentAndPunchRecordService {
-    List<IndexStudent> getSort();
 
-
+    Map<String, Object> getStudentAndPunchInfo(HttpSession session);
 }
