@@ -9,6 +9,13 @@ import java.util.Map;
 
 public interface PunchRecordService {
 
+    void insert(PunchRecord punchRecord);
+
+    PunchRecord getUnfinishPunchByStudnetID(Long studentID);
+
+    void endRecordTime(PunchRecord punchRecord);
+
+    void deleteShortPunchTime(Long studentID);
 
     Map<String, Object> startPunch(Map<String, String> startPunchMap, HttpSession session, HttpServletRequest request);
 

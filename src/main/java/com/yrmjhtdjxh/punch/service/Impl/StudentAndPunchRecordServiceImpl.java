@@ -1,5 +1,6 @@
 package com.yrmjhtdjxh.punch.service.Impl;
 
+import com.yrmjhtdjxh.punch.VO.StudentVO;
 import com.yrmjhtdjxh.punch.domain.IndexStudent;
 import com.yrmjhtdjxh.punch.domain.PunchRecord;
 import com.yrmjhtdjxh.punch.domain.Student;
@@ -71,7 +72,7 @@ public class StudentAndPunchRecordServiceImpl implements StudentAndPunchRecordSe
         List<IndexStudent> list = new ArrayList<>();
 
         // 1.先将所有的student信息查出来放到一个List中
-        List<Student> students = studentMapper.getAll();
+        List<StudentVO> students = studentMapper.getAllByRole(null);
 
         // 2.循环这个List去根据IndexStudent的结构计算 每个student的punchRecordMapper信息
         for(Student student : students) {

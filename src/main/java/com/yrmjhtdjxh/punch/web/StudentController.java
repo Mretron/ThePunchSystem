@@ -1,12 +1,13 @@
 package com.yrmjhtdjxh.punch.web;
 
+import com.yrmjhtdjxh.punch.VO.Result;
 import com.yrmjhtdjxh.punch.domain.Student;
+import com.yrmjhtdjxh.punch.domain.StudentRole;
+import com.yrmjhtdjxh.punch.form.StudentRoleForm;
 import com.yrmjhtdjxh.punch.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
@@ -33,16 +34,27 @@ public class StudentController {
      * @param student
      * @return
      */
-    @RequestMapping("/register")
+    @PostMapping("/register")
     public Map<String, String> register(@RequestBody @Valid Student student) {
         return studentService.register(student);
+    }
+
+    /**
+     * 删除用户及相关信息
+     * @param userId
+     * @param session
+     * @return
+     */
+    @GetMapping("/deleteUser")
+    public Result deleteUser(Long userId,HttpSession session){
+        return studentService.deleteUser(userId,session);
     }
 
     /**
      * 登录的接口
      * @return
      */
-    @RequestMapping("/login")
+    @PostMapping("/login")
     public Map<String, String> getOne(@RequestBody Map<String, String> loginMap, HttpSession session){
         return studentService.login(loginMap,session);
     }
@@ -51,10 +63,23 @@ public class StudentController {
     /**
      * 修改个人信息的接口
      */
-    @RequestMapping("updateStudentInfo")
+    @PostMapping("updateStudentInfo")
     public Map<String, Object> update(@RequestBody @Valid Student student,
                                       HttpSession session) {
         return studentService.updateStudentInfo(student,session);
+    }
+
+    @PostMapping("/updateUserRole")
+    public Result updateUserRole(@RequestBody @Valid StudentRoleForm form,HttpSession httpSession){
+        return studentService.updateUserRole(form,httpSession);
+    }
+
+    /**
+     *  获取注册用户列表
+     */
+    @GetMapping("/getRegisterUserList")
+    public Result getRegisterUserList(HttpSession httpSession) {
+        return studentService.getRegisterUserList(httpSession);
     }
 
 }

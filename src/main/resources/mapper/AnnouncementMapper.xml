@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yrmjhtdjxh.punch.mapper.AnnouncementMapper">
+  <resultMap id="BaseResultMap" type="com.yrmjhtdjxh.punch.domain.Announcement">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="publisher_id" jdbcType="BIGINT" property="publisherId" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="publish_time" jdbcType="TIMESTAMP" property="publishTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from punch.announcement
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="com.yrmjhtdjxh.punch.domain.Announcement">
+    insert into punch.announcement (id, publisher_id, title,
+      content, publish_time, update_time,status
+      )
+    values (#{id,jdbcType=BIGINT}, #{publisherId,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, 
+      #{content,jdbcType=VARCHAR}, #{publishTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP},#{status}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.yrmjhtdjxh.punch.domain.Announcement">
+    update punch.announcement
+    set publisher_id = #{publisherId,jdbcType=BIGINT},
+      title = #{title,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      publish_time = #{publishTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateAnnouncementStatusById">
+    update punch.announcement set status = #{status} where id = #{id}
+  </update>
+  <select id="selectByPrimaryKeyAndStatus" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select id, publisher_id, title, content, publish_time, update_time,status
+    from punch.announcement
+    where id = #{id,jdbcType=BIGINT}
+    <if test="status!=null">
+      and status = #{status}
+    </if>
+  </select>
+  <select id="selectAllByStatus" resultMap="BaseResultMap">
+    select id, publisher_id, title, content, publish_time, update_time
+    from punch.announcement
+    <where>
+      <if test="status!=null">
+        `status` = #{status}
+      </if>
+    </where>
+  </select>
+</mapper>
