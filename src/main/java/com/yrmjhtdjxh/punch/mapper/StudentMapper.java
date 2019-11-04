@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @author etron
  */
-
+@Repository
 public interface StudentMapper {
 
     void insert(Student student);
