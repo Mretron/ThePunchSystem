@@ -2,6 +2,7 @@ package com.yrmjhtdjxh.punch.service.Impl;
 
 import com.yrmjhtdjxh.punch.VO.Result;
 import com.yrmjhtdjxh.punch.VO.StudentVO;
+import com.yrmjhtdjxh.punch.VO.TimeRecordVO;
 import com.yrmjhtdjxh.punch.domain.Student;
 import com.yrmjhtdjxh.punch.enums.UserRole;
 import com.yrmjhtdjxh.punch.form.StudentRoleForm;
@@ -9,14 +10,13 @@ import com.yrmjhtdjxh.punch.mapper.PunchRecordMapper;
 import com.yrmjhtdjxh.punch.mapper.StudentMapper;
 import com.yrmjhtdjxh.punch.mapper.StudentRoleMapper;
 import com.yrmjhtdjxh.punch.service.StudentService;
-import com.yrmjhtdjxh.punch.util.MD5Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.security.sasl.AuthenticationException;
 import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -48,8 +48,6 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Result getRegisterUserList(HttpSession httpSession) {
-        StudentVO studentVO = (StudentVO)httpSession.getAttribute("student");
-        System.err.println(studentVO.toString());
         if (!userAuthentication(httpSession,UserRole.ADMINISTRATOR)){
             return Result.error(403,"权限不足");
         }
@@ -58,7 +56,7 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Result deleteUser(Long userId, HttpSession session) {
-        if (!userAuthentication(session,null)){
+        if (!userAuthentication(session,UserRole.ADMINISTRATOR)){
             return Result.error(403,"权限不足");
         }
         if (userId == null){
@@ -75,7 +73,7 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public Result updateUserRole(StudentRoleForm form, HttpSession httpSession) {
-        if (!userAuthentication(httpSession,null)){
+        if (!userAuthentication(httpSession,UserRole.AVERAGE_USER)){
             return Result.error(403,"权限不足");
         }
         if (studentMapper.getOne(form.getUserId()) == null){
@@ -149,6 +147,7 @@ public class StudentServiceImpl implements StudentService {
             map.put("status","fail");
         } else {
             map.put("status","success");
+            map.put("role", String.valueOf(student.getUserRole()));
             // 登录成功，放入session
             session.setAttribute("student",student);
 
@@ -170,12 +169,22 @@ public class StudentServiceImpl implements StudentService {
         studentMapper.updatePunchByStudentID(studentID, punchStatus);
     }
 
-    private boolean userAuthentication(HttpSession httpSession,UserRole userRole) {
+    @Override
+    public Result getPunchChart(HttpSession httpSession) {
+        if (!userAuthentication(httpSession,UserRole.AVERAGE_USER)){
+            return Result.error(403,"权限不足");
+        }
+        StudentVO studentVO = (StudentVO) httpSession.getAttribute("student");
+        List<TimeRecordVO> list = punchRecordMapper.getChartByTimeAndUser(studentVO.getStudentID(),new Date(System.currentTimeMillis()-30*86400000L),new Date());
+        return Result.success(list);
+    }
+
+    private boolean userAuthentication(HttpSession httpSession, UserRole userRole) {
         StudentVO studentVO = (StudentVO) httpSession.getAttribute("student");
         if (studentVO == null){
             return false;
         }else {
-            return userRole == null || userRole.getValue().equals(studentVO.getUserRole());
+            return userRole == null || userRole.getValue() < (studentVO.getUserRole());
         }
     }
 }

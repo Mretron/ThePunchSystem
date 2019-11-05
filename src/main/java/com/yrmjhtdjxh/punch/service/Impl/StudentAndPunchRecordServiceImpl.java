@@ -75,7 +75,7 @@ public class StudentAndPunchRecordServiceImpl implements StudentAndPunchRecordSe
         List<StudentVO> students = studentMapper.getAllByRole(null);
 
         // 2.循环这个List去根据IndexStudent的结构计算 每个student的punchRecordMapper信息
-        for(Student student : students) {
+        for(StudentVO student : students) {
             IndexStudent indexStudent = new IndexStudent();
 
             indexStudent.setName(student.getName());

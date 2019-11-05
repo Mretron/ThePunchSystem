@@ -5,6 +5,7 @@ import com.yrmjhtdjxh.punch.VO.Result;
 import com.yrmjhtdjxh.punch.form.AnnouncementPublishForm;
 import com.yrmjhtdjxh.punch.form.AnnouncementUpdateForm;
 import com.yrmjhtdjxh.punch.service.AnnouncementService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,6 +20,7 @@ import javax.validation.Valid;
  */
 @RestController
 @RequestMapping("/announcement")
+@Api(tags = "公告模块")
 public class AnnouncementController {
 
     private AnnouncementService announcementService;
