@@ -1,8 +1,12 @@
 package com.yrmjhtdjxh.punch.mapper;
 
+import com.yrmjhtdjxh.punch.VO.PunchChartVO;
+import com.yrmjhtdjxh.punch.VO.TimeRecordVO;
 import com.yrmjhtdjxh.punch.domain.PunchRecord;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.Date;
 import java.util.List;
 
 @Repository
@@ -33,4 +37,6 @@ public interface PunchRecordMapper {
     void endPunchRecord(PunchRecord punchRecord);
 
     void deleteByStudentID(Long studentID);
+
+    List<TimeRecordVO> getChartByTimeAndUser(@Param("userId")Long userId, @Param("start")Date start, @Param("end")Date end);
 }

@@ -16,7 +16,7 @@ import java.util.Date;
  * @author dengg
  */
 @Data
-public class StudentVO extends Student{
+public class StudentVO {
 
     /**
      * 作为自增主键

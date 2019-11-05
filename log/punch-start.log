@@ -22,3 +22,650 @@
 2019-11-05 09:53:24.615  INFO 13612 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-11-05 09:53:24.615  INFO 13612 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-11-05 09:53:24.628  INFO 13612 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-11-05 10:15:41.635  INFO 13612 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2019-11-05 10:15:42.620  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 13612 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:15:42.621 DEBUG 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:15:42.621  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-05 10:15:42.799  WARN 13612 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.yrmjhtdjxh.punch.PunchApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/yrmjhtdjxh/punch/service/Impl/StudentServiceImpl.class] cannot be opened because it does not exist
+2019-11-05 10:15:42.810 ERROR 13612 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.yrmjhtdjxh.punch.PunchApplication]; nested exception is java.io.FileNotFoundException: class path resource [com/yrmjhtdjxh/punch/service/Impl/StudentServiceImpl.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.yrmjhtdjxh.punch.PunchApplication.main(PunchApplication.java:13)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.FileNotFoundException: class path resource [com/yrmjhtdjxh/punch/service/Impl/StudentServiceImpl.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:51)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:190)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 18 common frames omitted
+
+2019-11-05 10:15:45.277  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 13612 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:15:45.277 DEBUG 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:15:45.278  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-05 10:15:45.771  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:15:45.794  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2019-11-05 10:15:45.880  INFO 13612 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$660af502] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:15:46.094  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-05 10:15:46.095  INFO 13612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-05 10:15:46.096  INFO 13612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-05 10:15:46.126  INFO 13612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-05 10:15:46.127  INFO 13612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 846 ms
+2019-11-05 10:15:46.853  INFO 13612 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:15:46.985  INFO 13612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-05 10:15:47.468  INFO 15420 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Starting PunchRecordMapperTest on DESKTOP-RFQAJO8 with PID 15420 (started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:15:47.469 DEBUG 15420 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:15:47.469  INFO 15420 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : No active profile set, falling back to default profiles: default
+2019-11-05 10:15:47.526  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:15:47.528  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:15:47.534  INFO 13612 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:15:47.623  INFO 13612 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:15:47.637  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-05 10:15:47.638  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 2.401 seconds (JVM running for 1365.094)
+2019-11-05 10:15:47.643  INFO 13612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-05 10:15:49.020  INFO 15420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:15:49.059  INFO 15420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-11-05 10:15:49.594  INFO 15420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3b57d8c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:18:39.771  INFO 11660 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Starting PunchRecordMapperTest on DESKTOP-RFQAJO8 with PID 11660 (started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:18:39.772 DEBUG 11660 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:18:39.773  INFO 11660 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : No active profile set, falling back to default profiles: default
+2019-11-05 10:18:41.507  INFO 11660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:18:41.539  INFO 11660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2019-11-05 10:18:42.037  INFO 11660 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3b57d8c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:18:43.988  INFO 11660 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:18:45.449  INFO 11660 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:18:45.483  INFO 11660 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:18:45.516  INFO 11660 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:18:45.740  INFO 11660 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:18:45.772  INFO 11660 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Started PunchRecordMapperTest in 6.517 seconds (JVM running for 7.587)
+2019-11-05 10:18:48.518  INFO 11660 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-05 10:18:48.526 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.850 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 3.5(Double), 2019-11-05 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.859 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.861 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.861 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 3.61(Double), 2019-11-06 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.868 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.869 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.869 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 3.72(Double), 2019-11-07 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.873 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.874 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.875 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 3.83(Double), 2019-11-08 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.879 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.879 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.879 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 3.94(Double), 2019-11-09 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.883 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.884 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.884 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 4.05(Double), 2019-11-10 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.889 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.889 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.890 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 4.16(Double), 2019-11-11 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.893 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.894 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.894 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 4.27(Double), 2019-11-12 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.905 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.905 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.905 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 4.38(Double), 2019-11-13 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.910 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.910 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.911 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 4.49(Double), 2019-11-14 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.920 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.920 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.921 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 4.6(Double), 2019-11-15 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.930 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.930 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.931 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 4.71(Double), 2019-11-16 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.936 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.936 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.937 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 4.82(Double), 2019-11-17 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.941 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.941 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.942 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 4.93(Double), 2019-11-18 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.946 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.946 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.947 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 5.04(Double), 2019-11-19 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.952 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.953 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.956 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 5.15(Double), 2019-11-20 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.960 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.961 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.962 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 5.26(Double), 2019-11-21 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.965 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.966 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.966 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 5.37(Double), 2019-11-22 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.970 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.971 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.971 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 5.48(Double), 2019-11-23 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.976 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.976 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.976 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 5.59(Double), 2019-11-24 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.980 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.981 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.981 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 5.7(Double), 2019-11-25 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.985 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.986 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.987 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 5.8100000000000005(Double), 2019-11-26 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.991 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.992 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.992 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 5.92(Double), 2019-11-27 10:18:46.035(Timestamp)
+2019-11-05 10:18:48.996 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:48.997 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:48.997 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 6.029999999999999(Double), 2019-11-28 10:18:46.035(Timestamp)
+2019-11-05 10:18:49.001 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.002 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.002 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 6.140000000000001(Double), 2019-11-29 10:18:46.035(Timestamp)
+2019-11-05 10:18:49.006 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.006 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.007 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 6.25(Double), 2019-10-11 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.011 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.011 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.012 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 6.359999999999999(Double), 2019-10-12 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.017 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.017 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.018 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 6.470000000000001(Double), 2019-10-13 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.021 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.022 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.022 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 6.58(Double), 2019-10-14 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.027 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.027 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.028 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 6.6899999999999995(Double), 2019-10-15 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.032 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.032 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.033 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 6.8(Double), 2019-10-16 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.037 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.037 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.037 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 6.91(Double), 2019-10-17 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.042 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.042 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.043 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 7.02(Double), 2019-10-18 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.053 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.054 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.054 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 7.13(Double), 2019-10-19 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.065 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.065 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.066 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 7.24(Double), 2019-10-20 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.071 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.074 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.074 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 7.35(Double), 2019-10-21 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.079 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.079 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.080 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 7.46(Double), 2019-10-22 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.085 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.085 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.086 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 7.57(Double), 2019-10-23 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.090 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.090 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.091 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 7.68(Double), 2019-10-24 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.096 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.097 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.097 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 7.79(Double), 2019-10-25 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.108 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.108 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.109 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 7.9(Double), 2019-10-26 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.113 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.114 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.114 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 8.01(Double), 2019-10-27 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.119 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.119 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.120 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 8.120000000000001(Double), 2019-10-28 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.124 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.125 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.125 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 8.23(Double), 2019-10-29 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.130 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.131 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.131 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 8.34(Double), 2019-10-30 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.136 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.136 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.136 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 8.45(Double), 2019-10-31 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.140 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.141 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.141 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 8.559999999999999(Double), 2019-11-01 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.146 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.146 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.147 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 8.67(Double), 2019-11-02 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.150 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.151 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.151 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 8.780000000000001(Double), 2019-11-03 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.155 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.155 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.156 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 8.89(Double), 2019-11-04 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.160 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.160 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.161 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 9.0(Double), 2019-11-05 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.165 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.165 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.165 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 9.11(Double), 2019-11-06 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.169 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.170 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.170 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 9.219999999999999(Double), 2019-11-07 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.175 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.175 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.176 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 9.33(Double), 2019-11-08 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.181 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.181 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.181 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 9.440000000000001(Double), 2019-11-09 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.186 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.186 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.187 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 9.55(Double), 2019-11-10 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.191 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.191 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.192 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 9.66(Double), 2019-11-11 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.196 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.196 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.196 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 9.77(Double), 2019-11-12 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.201 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.201 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.202 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 9.879999999999999(Double), 2019-11-13 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.206 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.206 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==>  Preparing: INSERT INTO punchrecord (id, studentID, beginPunchTime, endPunchTime, recordTime, date) VALUES (?, ?, ?, ?, ?, ?); 
+2019-11-05 10:18:49.206 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : ==> Parameters: 0(Integer), 201731062632(Long), null, null, 9.99(Double), 2019-11-14 17:15:58.739(Timestamp)
+2019-11-05 10:18:49.211 DEBUG 11660 --- [main] c.y.p.mapper.PunchRecordMapper.insert    : <==    Updates: 1
+2019-11-05 10:18:49.224  INFO 11660 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-11-05 10:18:49.237  INFO 11660 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-05 10:35:23.496  INFO 13612 --- [Thread-19] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2019-11-05 10:35:24.428  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 13612 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:35:24.428 DEBUG 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:35:24.429  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-05 10:35:24.748  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:35:24.755  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2019-11-05 10:35:24.814  INFO 13612 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$660af502] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:35:24.961  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-05 10:35:24.962  INFO 13612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-05 10:35:24.963  INFO 13612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-05 10:35:24.982  INFO 13612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-05 10:35:24.982  INFO 13612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 551 ms
+2019-11-05 10:35:25.491  INFO 13612 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:35:25.582  INFO 13612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-05 10:35:25.884  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:35:25.885  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:35:25.890  INFO 13612 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:35:25.934  INFO 13612 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:35:25.942  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-05 10:35:25.943  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 1.557 seconds (JVM running for 2543.399)
+2019-11-05 10:35:25.946  INFO 13612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-05 10:35:28.333  INFO 8200 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Starting PunchRecordMapperTest on DESKTOP-RFQAJO8 with PID 8200 (started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:35:28.334 DEBUG 8200 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:35:28.334  INFO 8200 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : No active profile set, falling back to default profiles: default
+2019-11-05 10:35:29.398  INFO 8200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:35:29.431  INFO 8200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2019-11-05 10:35:30.014  INFO 8200 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$894bca65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:35:31.882  INFO 8200 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:35:33.379  INFO 8200 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:35:33.415  INFO 8200 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:35:33.459  INFO 8200 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:35:33.694  INFO 8200 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:35:33.719  INFO 8200 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Started PunchRecordMapperTest in 6.06 seconds (JVM running for 7.844)
+2019-11-05 10:35:36.336  INFO 8200 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-05 10:35:36.345 DEBUG 8200 --- [main] c.y.p.m.P.getChartByTimeAndUser          : ==>  Preparing: select count(recordTime) as totalHourOfOneDay,date from punchrecord where studentID = ? group by date WHERE date < ? and date > ? ORDER BY date 
+2019-11-05 10:35:36.707  INFO 8200 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-11-05 10:35:36.719  INFO 8200 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-05 10:36:53.325  INFO 13612 --- [Thread-27] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2019-11-05 10:36:54.242  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 13612 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:36:54.242 DEBUG 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:36:54.243  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-05 10:36:54.539  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:36:54.544  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-11-05 10:36:54.588  INFO 13612 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$660af502] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:36:54.710  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-05 10:36:54.711  INFO 13612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-05 10:36:54.712  INFO 13612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-05 10:36:54.733  INFO 13612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-05 10:36:54.733  INFO 13612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 489 ms
+2019-11-05 10:36:55.245  INFO 13612 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:36:55.322  INFO 13612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-05 10:36:55.643  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:36:55.644  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:36:55.650  INFO 13612 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:36:55.700  INFO 13612 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:36:55.712  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-05 10:36:55.713  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 1.498 seconds (JVM running for 2633.168)
+2019-11-05 10:36:55.717  INFO 13612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-05 10:36:57.506  INFO 2696 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Starting PunchRecordMapperTest on DESKTOP-RFQAJO8 with PID 2696 (started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:36:57.507 DEBUG 2696 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:36:57.508  INFO 2696 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : No active profile set, falling back to default profiles: default
+2019-11-05 10:36:58.730  INFO 2696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:36:58.760  INFO 2696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019-11-05 10:36:59.318  INFO 2696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1d5c8854] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:37:01.190  INFO 2696 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:37:02.559  INFO 2696 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:37:02.592  INFO 2696 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:37:02.633  INFO 2696 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:37:02.868  INFO 2696 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:37:02.899  INFO 2696 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Started PunchRecordMapperTest in 6.067 seconds (JVM running for 7.365)
+2019-11-05 10:37:05.515  INFO 2696 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-05 10:37:05.524 DEBUG 2696 --- [main] c.y.p.m.P.getChartByTimeAndUser          : ==>  Preparing: select count(recordTime) as totalHourOfOneDay,date from punchrecord where studentID = ? group by date WHERE date < ? and date > ? ORDER BY date 
+2019-11-05 10:37:05.847  INFO 2696 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-11-05 10:37:05.860  INFO 2696 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-05 10:38:44.508  INFO 13612 --- [Thread-33] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2019-11-05 10:38:45.495  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 13612 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:38:45.495 DEBUG 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:38:45.496  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-05 10:38:45.807  INFO 2632 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Starting PunchRecordMapperTest on DESKTOP-RFQAJO8 with PID 2632 (started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:38:45.808 DEBUG 2632 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:38:45.809  INFO 2632 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : No active profile set, falling back to default profiles: default
+2019-11-05 10:38:46.029  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:38:46.038  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-11-05 10:38:46.136  INFO 13612 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$660af502] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:38:46.684  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-05 10:38:46.685  INFO 13612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-05 10:38:46.686  INFO 13612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-05 10:38:46.730  INFO 13612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-05 10:38:46.730  INFO 13612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1230 ms
+2019-11-05 10:38:47.451  INFO 2632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:38:47.482  INFO 13612 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:38:47.483  INFO 2632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2019-11-05 10:38:47.571  INFO 13612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-05 10:38:47.938  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:38:47.940  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:38:47.946  INFO 13612 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:38:47.990  INFO 13612 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:38:48.006  INFO 2632 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4729781] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:38:48.021  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-05 10:38:48.022  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 2.568 seconds (JVM running for 2745.477)
+2019-11-05 10:38:48.025  INFO 13612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-05 10:38:51.485  INFO 17280 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Starting PunchRecordMapperTest on DESKTOP-RFQAJO8 with PID 17280 (started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:38:51.487 DEBUG 17280 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:38:51.487  INFO 17280 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : No active profile set, falling back to default profiles: default
+2019-11-05 10:38:52.887  INFO 17280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:38:52.926  INFO 17280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+2019-11-05 10:38:53.584  INFO 17280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1bdcb27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:38:55.497  INFO 17280 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:38:56.878  INFO 17280 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:38:56.904  INFO 17280 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:38:56.939  INFO 17280 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:38:57.176  INFO 17280 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:38:57.208  INFO 17280 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Started PunchRecordMapperTest in 6.442 seconds (JVM running for 7.903)
+2019-11-05 10:38:59.801  INFO 17280 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-05 10:38:59.812 DEBUG 17280 --- [main] c.y.p.m.P.getChartByTimeAndUser          : ==>  Preparing: select count(recordTime) as totalHourOfOneDay,date from punchrecord where studentID = ? group by date WHERE date < ? and date > ? ORDER BY date 
+2019-11-05 10:39:00.164  INFO 17280 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-11-05 10:39:00.176  INFO 17280 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-05 10:40:32.557  INFO 13612 --- [Thread-39] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2019-11-05 10:40:33.592  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 13612 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:40:33.593 DEBUG 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:40:33.593  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-05 10:40:33.738  INFO 15300 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Starting PunchRecordMapperTest on DESKTOP-RFQAJO8 with PID 15300 (started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:40:33.739 DEBUG 15300 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:40:33.740  INFO 15300 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : No active profile set, falling back to default profiles: default
+2019-11-05 10:40:34.306  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:40:34.333  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2019-11-05 10:40:34.453  INFO 13612 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$660af502] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:40:34.758  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-05 10:40:34.759  INFO 13612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-05 10:40:34.760  INFO 13612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-05 10:40:34.785  INFO 13612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-05 10:40:34.785  INFO 13612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1190 ms
+2019-11-05 10:40:35.191  INFO 15300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:40:35.225  INFO 15300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2019-11-05 10:40:35.333  INFO 13612 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:40:35.419  INFO 13612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-05 10:40:35.715  INFO 15300 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$825d3463] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:40:35.739  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:40:35.740  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:40:35.744  INFO 13612 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:40:35.771  INFO 13612 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:40:35.779  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-05 10:40:35.780  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 2.227 seconds (JVM running for 2853.236)
+2019-11-05 10:40:35.782  INFO 13612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-05 10:40:37.403  INFO 15300 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:40:38.494  INFO 15300 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:40:38.522  INFO 15300 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:40:38.554  INFO 15300 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:40:38.727  INFO 15300 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:40:38.750  INFO 15300 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Started PunchRecordMapperTest in 5.562 seconds (JVM running for 6.57)
+2019-11-05 10:40:41.140  INFO 15300 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-05 10:40:41.147 DEBUG 15300 --- [main] c.y.p.m.P.getChartByTimeAndUser          : ==>  Preparing: select count(recordTime) as totalHourOfOneDay,date from punchrecord where studentID = ? group by date WHERE date between (?,?) ORDER BY date 
+2019-11-05 10:40:41.332  INFO 15300 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-11-05 10:40:41.347  INFO 15300 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-05 10:44:45.276  INFO 13612 --- [Thread-45] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2019-11-05 10:44:46.473  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 13612 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:44:46.473 DEBUG 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:44:46.474  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-05 10:44:47.004  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:44:47.013  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-11-05 10:44:47.096  INFO 13612 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$660af502] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:44:47.345  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-05 10:44:47.346  INFO 13612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-05 10:44:47.346  INFO 13612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-05 10:44:47.378  INFO 13612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-05 10:44:47.378  INFO 13612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 902 ms
+2019-11-05 10:44:47.477  INFO 17860 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Starting PunchRecordMapperTest on DESKTOP-RFQAJO8 with PID 17860 (started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:44:47.479 DEBUG 17860 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:44:47.479  INFO 17860 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : No active profile set, falling back to default profiles: default
+2019-11-05 10:44:48.480  INFO 13612 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:44:48.589  INFO 13612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-05 10:44:49.126  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:44:49.127  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:44:49.134  INFO 13612 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:44:49.158  INFO 17860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:44:49.181  INFO 13612 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:44:49.192  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-05 10:44:49.192  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 2.764 seconds (JVM running for 3106.648)
+2019-11-05 10:44:49.196  INFO 13612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-05 10:44:49.196  INFO 17860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+2019-11-05 10:44:49.819  INFO 17860 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1acf378f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:44:51.736  INFO 17860 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:44:53.243  INFO 17860 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:44:53.278  INFO 17860 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:44:53.318  INFO 17860 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:44:53.548  INFO 17860 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:44:53.578  INFO 17860 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Started PunchRecordMapperTest in 6.879 seconds (JVM running for 8.29)
+2019-11-05 10:44:56.262  INFO 17860 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-05 10:44:56.271 DEBUG 17860 --- [main] c.y.p.m.P.getChartByTimeAndUser          : ==>  Preparing: select count(recordTime) as totalHourOfOneDay,date from punchrecord where studentID = ? group by date WHERE date between ? and ? ORDER BY date 
+2019-11-05 10:44:56.610  INFO 17860 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-11-05 10:44:56.624  INFO 17860 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-05 10:46:17.618  INFO 13612 --- [Thread-51] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
+2019-11-05 10:46:18.782  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 13612 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:46:18.783 DEBUG 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:46:18.783  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-05 10:46:19.050  INFO 1892 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Starting PunchRecordMapperTest on DESKTOP-RFQAJO8 with PID 1892 (started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:46:19.051 DEBUG 1892 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:46:19.052  INFO 1892 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : No active profile set, falling back to default profiles: default
+2019-11-05 10:46:19.566  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:46:19.582  INFO 13612 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-11-05 10:46:19.682  INFO 13612 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$660af502] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:46:19.960  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-05 10:46:19.962  INFO 13612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-05 10:46:19.963  INFO 13612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-05 10:46:20.000  INFO 13612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-05 10:46:20.001  INFO 13612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1214 ms
+2019-11-05 10:46:20.608  INFO 13612 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:46:20.613  INFO 1892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:46:20.646  INFO 1892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2019-11-05 10:46:20.702  INFO 13612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-05 10:46:21.122  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:46:21.123  INFO 13612 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:46:21.128  INFO 13612 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:46:21.163  INFO 13612 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:46:21.174  INFO 13612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-05 10:46:21.176  INFO 13612 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 2.429 seconds (JVM running for 3198.631)
+2019-11-05 10:46:21.178  INFO 13612 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-05 10:46:21.308  INFO 1892 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8eb03969] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:46:23.326  INFO 1892 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:46:24.715  INFO 1892 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:46:24.751  INFO 1892 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:46:24.792  INFO 1892 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:46:25.013  INFO 1892 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:46:25.044  INFO 1892 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Started PunchRecordMapperTest in 6.822 seconds (JVM running for 8.126)
+2019-11-05 10:46:27.656  INFO 1892 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-05 10:46:27.664 DEBUG 1892 --- [main] c.y.p.m.P.getChartByTimeAndUser          : ==>  Preparing: select count(recordTime) as totalHourOfOneDay,date from punchrecord where studentID = ? group by date having date between ? and ? ORDER BY date 
+2019-11-05 10:46:28.006 DEBUG 1892 --- [main] c.y.p.m.P.getChartByTimeAndUser          : ==> Parameters: 201731062632(Long), 2019-11-15 10:46:25.275(Timestamp), 2019-11-05 10:46:25.275(Timestamp)
+2019-11-05 10:46:28.038 DEBUG 1892 --- [main] c.y.p.m.P.getChartByTimeAndUser          : <==      Total: 0
+2019-11-05 10:47:00.617  INFO 1892 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-11-05 10:47:00.634  INFO 1892 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-05 10:47:06.363  INFO 7456 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Starting PunchRecordMapperTest on DESKTOP-RFQAJO8 with PID 7456 (started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:47:06.365 DEBUG 7456 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:47:06.376  INFO 7456 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : No active profile set, falling back to default profiles: default
+2019-11-05 10:47:07.890  INFO 7456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:47:07.926  INFO 7456 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+2019-11-05 10:47:08.575  INFO 7456 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d4956f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:47:10.604  INFO 7456 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:47:12.059  INFO 7456 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:47:12.088  INFO 7456 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:47:12.130  INFO 7456 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:47:12.387  INFO 7456 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:47:12.419  INFO 7456 --- [main] c.y.punch.mapper.PunchRecordMapperTest   : Started PunchRecordMapperTest in 6.752 seconds (JVM running for 8.124)
+2019-11-05 10:47:15.045  INFO 7456 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-05 10:47:15.056 DEBUG 7456 --- [main] c.y.p.m.P.getChartByTimeAndUser          : ==>  Preparing: select count(recordTime) as totalHourOfOneDay,date from punchrecord where studentID = ? group by date having date between ? and ? ORDER BY date 
+2019-11-05 10:47:15.456 DEBUG 7456 --- [main] c.y.p.m.P.getChartByTimeAndUser          : ==> Parameters: 201731062632(Long), 2019-10-26 10:47:12.67(Timestamp), 2019-11-05 10:47:12.67(Timestamp)
+2019-11-05 10:47:15.494 DEBUG 7456 --- [main] c.y.p.m.P.getChartByTimeAndUser          : <==      Total: 11
+2019-11-05 10:47:15.516  INFO 7456 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2019-11-05 10:47:15.528  INFO 7456 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-11-05 10:53:41.340  INFO 1208 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 1208 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:53:41.343 DEBUG 1208 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:53:41.344  INFO 1208 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-05 10:53:41.441  INFO 1208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-05 10:53:41.441  INFO 1208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-05 10:53:42.203  INFO 1208 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:53:42.220  INFO 1208 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-11-05 10:53:42.510  INFO 1208 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d10349f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:53:42.957  INFO 1208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-05 10:53:42.976  INFO 1208 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-05 10:53:42.976  INFO 1208 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-05 10:53:43.086  INFO 1208 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-05 10:53:43.086  INFO 1208 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1645 ms
+2019-11-05 10:53:44.096  INFO 1208 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:53:44.226  INFO 1208 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-05 10:53:44.657  INFO 1208 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:53:44.672  INFO 1208 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:53:44.699  INFO 1208 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:53:44.848  INFO 1208 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:53:44.888  INFO 1208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-05 10:53:44.891  INFO 1208 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 4.229 seconds (JVM running for 6.071)
+2019-11-05 10:53:51.675  INFO 1208 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-05 10:53:51.675  INFO 1208 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-05 10:53:51.686  INFO 1208 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-05 10:54:36.037  INFO 1208 --- [http-nio-8085-exec-8] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062632, password=123456}, org.apache.catalina.session.StandardSessionFacade@773cd8da]}
+2019-11-05 10:54:37.250  INFO 1208 --- [http-nio-8085-exec-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-05 10:54:37.254 DEBUG 1208 --- [http-nio-8085-exec-8] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT student_role.user_role as userRole,id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch FROM students INNER JOIN student_role ON student_role.user_id = students.studentID WHERE studentID = ? AND password = ? 
+2019-11-05 10:54:37.368 DEBUG 1208 --- [http-nio-8085-exec-8] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062632(Long), 123456(String)
+2019-11-05 10:54:37.398 DEBUG 1208 --- [http-nio-8085-exec-8] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-11-05 10:54:37.403  INFO 1208 --- [http-nio-8085-exec-8] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-11-05 10:54:50.760  INFO 1208 --- [http-nio-8085-exec-9] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/getPunchChart', ip='0:0:0:0:0:0:0:1', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getPunchChart', args=[org.apache.catalina.session.StandardSessionFacade@773cd8da]}
+2019-11-05 10:54:50.779 DEBUG 1208 --- [http-nio-8085-exec-9] c.y.p.m.P.getChartByTimeAndUser          : ==>  Preparing: select count(recordTime) as totalHourOfOneDay,date from punchrecord where studentID = ? group by date having date between ? and ? ORDER BY date 
+2019-11-05 10:54:50.786 DEBUG 1208 --- [http-nio-8085-exec-9] c.y.p.m.P.getChartByTimeAndUser          : ==> Parameters: 201731062632(Long), 2019-10-06 10:54:50.76(Timestamp), 2019-11-05 10:54:50.76(Timestamp)
+2019-11-05 10:54:50.796 DEBUG 1208 --- [http-nio-8085-exec-9] c.y.p.m.P.getChartByTimeAndUser          : <==      Total: 26
+2019-11-05 10:54:50.796  INFO 1208 --- [http-nio-8085-exec-9] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:Result(code=200, msg=success, data=[TimeRecordVO(totalHourOfOneDay=1.0, date=Fri Oct 11 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sat Oct 12 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sun Oct 13 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Mon Oct 14 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Tue Oct 15 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Wed Oct 16 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Thu Oct 17 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Fri Oct 18 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sat Oct 19 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sun Oct 20 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Mon Oct 21 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Tue Oct 22 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Wed Oct 23 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Thu Oct 24 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Fri Oct 25 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sat Oct 26 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sun Oct 27 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Mon Oct 28 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Tue Oct 29 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Wed Oct 30 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Thu Oct 31 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Fri Nov 01 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sat Nov 02 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sun Nov 03 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Mon Nov 04 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=2.0, date=Tue Nov 05 10:18:46 CST 2019)])
+2019-11-05 10:57:43.848  INFO 1208 --- [http-nio-8085-exec-5] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='10.20.0.69', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062632, password=123456}, org.apache.catalina.session.StandardSessionFacade@4506b1b2]}
+2019-11-05 10:57:43.865 DEBUG 1208 --- [http-nio-8085-exec-5] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT student_role.user_role as userRole,id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch FROM students INNER JOIN student_role ON student_role.user_id = students.studentID WHERE studentID = ? AND password = ? 
+2019-11-05 10:57:43.867 DEBUG 1208 --- [http-nio-8085-exec-5] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062632(Long), 123456(String)
+2019-11-05 10:57:43.874 DEBUG 1208 --- [http-nio-8085-exec-5] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-11-05 10:57:43.875  INFO 1208 --- [http-nio-8085-exec-5] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-11-05 10:58:07.268  INFO 1208 --- [http-nio-8085-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/getPunchChart', ip='10.20.0.69', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getPunchChart', args=[org.apache.catalina.session.StandardSessionFacade@4506b1b2]}
+2019-11-05 10:58:07.270 DEBUG 1208 --- [http-nio-8085-exec-3] c.y.p.m.P.getChartByTimeAndUser          : ==>  Preparing: select count(recordTime) as totalHourOfOneDay,date from punchrecord where studentID = ? group by date having date between ? and ? ORDER BY date 
+2019-11-05 10:58:07.272 DEBUG 1208 --- [http-nio-8085-exec-3] c.y.p.m.P.getChartByTimeAndUser          : ==> Parameters: 201731062632(Long), 2019-10-06 10:58:07.269(Timestamp), 2019-11-05 10:58:07.269(Timestamp)
+2019-11-05 10:58:07.284 DEBUG 1208 --- [http-nio-8085-exec-3] c.y.p.m.P.getChartByTimeAndUser          : <==      Total: 26
+2019-11-05 10:58:07.285  INFO 1208 --- [http-nio-8085-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:Result(code=200, msg=success, data=[TimeRecordVO(totalHourOfOneDay=1.0, date=Fri Oct 11 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sat Oct 12 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sun Oct 13 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Mon Oct 14 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Tue Oct 15 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Wed Oct 16 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Thu Oct 17 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Fri Oct 18 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sat Oct 19 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sun Oct 20 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Mon Oct 21 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Tue Oct 22 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Wed Oct 23 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Thu Oct 24 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Fri Oct 25 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sat Oct 26 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sun Oct 27 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Mon Oct 28 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Tue Oct 29 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Wed Oct 30 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Thu Oct 31 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Fri Nov 01 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sat Nov 02 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Sun Nov 03 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1.0, date=Mon Nov 04 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=2.0, date=Tue Nov 05 10:18:46 CST 2019)])
+2019-11-05 10:58:36.539  INFO 14316 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 14316 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 10:58:36.541 DEBUG 14316 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 10:58:36.541  INFO 14316 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-05 10:58:36.632  INFO 14316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-05 10:58:36.632  INFO 14316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-05 10:58:37.382  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 10:58:37.400  INFO 14316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-11-05 10:58:37.685  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f83fad18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 10:58:38.126  INFO 14316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-05 10:58:38.145  INFO 14316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-05 10:58:38.146  INFO 14316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-05 10:58:38.235  INFO 14316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-05 10:58:38.235  INFO 14316 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1603 ms
+2019-11-05 10:58:39.138  INFO 14316 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 10:58:39.256  INFO 14316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-05 10:58:39.650  INFO 14316 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 10:58:39.665  INFO 14316 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 10:58:39.691  INFO 14316 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 10:58:39.841  INFO 14316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 10:58:39.892  INFO 14316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-05 10:58:39.897  INFO 14316 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 3.915 seconds (JVM running for 5.499)
+2019-11-05 10:58:51.369  INFO 14316 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-05 10:58:51.369  INFO 14316 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-05 10:58:51.380  INFO 14316 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-05 10:58:51.402  INFO 14316 --- [http-nio-8085-exec-1] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/getPunchChart', ip='10.20.0.69', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getPunchChart', args=[org.apache.catalina.session.StandardSessionFacade@5f2ff6f4]}
+2019-11-05 10:58:51.405  INFO 14316 --- [http-nio-8085-exec-1] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:Result(code=403, msg=权限不足, data=null)
+2019-11-05 10:59:03.354  INFO 14316 --- [http-nio-8085-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/login', ip='10.20.0.69', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getOne', args=[{studentID=201731062632, password=123456}, org.apache.catalina.session.StandardSessionFacade@5f2ff6f4]}
+2019-11-05 10:59:04.566  INFO 14316 --- [http-nio-8085-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-11-05 10:59:04.569 DEBUG 14316 --- [http-nio-8085-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==>  Preparing: SELECT student_role.user_role as userRole,id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch FROM students INNER JOIN student_role ON student_role.user_id = students.studentID WHERE studentID = ? AND password = ? 
+2019-11-05 10:59:04.678 DEBUG 14316 --- [http-nio-8085-exec-2] .p.m.S.findStudentByStudentIDAndPassword : ==> Parameters: 201731062632(Long), 123456(String)
+2019-11-05 10:59:04.703 DEBUG 14316 --- [http-nio-8085-exec-2] .p.m.S.findStudentByStudentIDAndPassword : <==      Total: 1
+2019-11-05 10:59:04.709  INFO 14316 --- [http-nio-8085-exec-2] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{status=success}
+2019-11-05 10:59:11.106  INFO 14316 --- [http-nio-8085-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/getPunchChart', ip='10.20.0.69', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getPunchChart', args=[org.apache.catalina.session.StandardSessionFacade@5f2ff6f4]}
+2019-11-05 10:59:11.141 DEBUG 14316 --- [http-nio-8085-exec-3] c.y.p.m.P.getChartByTimeAndUser          : ==>  Preparing: select sum(recordTime) as totalHourOfOneDay,date from punchrecord where studentID = ? group by date having date between ? and ? ORDER BY date 
+2019-11-05 10:59:11.151 DEBUG 14316 --- [http-nio-8085-exec-3] c.y.p.m.P.getChartByTimeAndUser          : ==> Parameters: 201731062632(Long), 2019-10-06 10:59:11.107(Timestamp), 2019-11-05 10:59:11.107(Timestamp)
+2019-11-05 10:59:11.158 DEBUG 14316 --- [http-nio-8085-exec-3] c.y.p.m.P.getChartByTimeAndUser          : <==      Total: 26
+2019-11-05 10:59:11.159  INFO 14316 --- [http-nio-8085-exec-3] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:Result(code=200, msg=success, data=[TimeRecordVO(totalHourOfOneDay=6.25, date=Fri Oct 11 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=6.36, date=Sat Oct 12 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=6.47, date=Sun Oct 13 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=6.58, date=Mon Oct 14 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=6.69, date=Tue Oct 15 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=6.8, date=Wed Oct 16 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=6.91, date=Thu Oct 17 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=7.02, date=Fri Oct 18 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=7.13, date=Sat Oct 19 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=7.24, date=Sun Oct 20 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=7.35, date=Mon Oct 21 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=7.46, date=Tue Oct 22 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=7.57, date=Wed Oct 23 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=7.68, date=Thu Oct 24 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=7.79, date=Fri Oct 25 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=7.9, date=Sat Oct 26 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=8.01, date=Sun Oct 27 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=8.12, date=Mon Oct 28 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=8.23, date=Tue Oct 29 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=8.34, date=Wed Oct 30 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=8.45, date=Thu Oct 31 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=8.56, date=Fri Nov 01 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=8.67, date=Sat Nov 02 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=8.78, date=Sun Nov 03 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=8.89, date=Mon Nov 04 17:15:59 CST 2019), TimeRecordVO(totalHourOfOneDay=1003.5, date=Tue Nov 05 10:18:46 CST 2019)])
+2019-11-05 10:59:39.985  WARN 14316 --- [http-nio-8085-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /gen204
+2019-11-05 11:00:01.429  WARN 14316 --- [http-nio-8085-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /gen204
+2019-11-05 11:01:15.398  INFO 14316 --- [http-nio-8085-exec-7] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/getRegisterUserList', ip='10.20.0.69', classMethod='com.yrmjhtdjxh.punch.web.StudentController.getRegisterUserList', args=[org.apache.catalina.session.StandardSessionFacade@5f2ff6f4]}
+2019-11-05 11:01:15.420 DEBUG 14316 --- [http-nio-8085-exec-7] c.y.p.mapper.StudentMapper.getAllByRole  : ==>  Preparing: SELECT student_role.user_role as userRole,id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch FROM students INNER JOIN student_role ON student_role.user_id = studentID WHERE user_role = ? 
+2019-11-05 11:01:15.426 DEBUG 14316 --- [http-nio-8085-exec-7] c.y.p.mapper.StudentMapper.getAllByRole  : ==> Parameters: 3(Integer)
+2019-11-05 11:01:15.432 DEBUG 14316 --- [http-nio-8085-exec-7] c.y.p.mapper.StudentMapper.getAllByRole  : <==      Total: 1
+2019-11-05 11:01:15.434  INFO 14316 --- [http-nio-8085-exec-7] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:Result(code=200, msg=success, data=[StudentVO(id=20, studentID=201731062631, password=123456, name=panghu, sex=1, grade=2017, photo=demoData, avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, createTime=Mon Nov 04 14:45:03 CST 2019, isPunch=false, userRole=3)])
+2019-11-05 11:01:54.911  WARN 14316 --- [http-nio-8085-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /gen204
+2019-11-05 11:03:02.021  WARN 14316 --- [http-nio-8085-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /gen204
+2019-11-05 11:03:02.936  WARN 14316 --- [http-nio-8085-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /gen204
+2019-11-05 11:03:19.631  WARN 14316 --- [http-nio-8085-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /gen204
+2019-11-05 11:03:26.701  INFO 14316 --- [http-nio-8085-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result : RequestLog{url='/getStudentAndPunchInfo', ip='10.20.0.69', classMethod='com.yrmjhtdjxh.punch.web.IndexController.getStudentAndPunchInfo', args=[org.apache.catalina.session.StandardSessionFacade@5f2ff6f4]}
+2019-11-05 11:03:26.711 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.punch.mapper.StudentMapper.getOne    : ==>  Preparing: SELECT * FROM students WHERE studentID = ? 
+2019-11-05 11:03:26.712 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.punch.mapper.StudentMapper.getOne    : ==> Parameters: 201731062632(Long)
+2019-11-05 11:03:26.714 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.punch.mapper.StudentMapper.getOne    : <==      Total: 1
+2019-11-05 11:03:26.715 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==>  Preparing: SELECT id, studentID, beginPunchTime, endPunchTime, recordTime, date FROM punchrecord WHERE studentID = ? AND recordTime = 0; 
+2019-11-05 11:03:26.718 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getUnfinishPunchByStudnetID    : ==> Parameters: 201731062632(Long)
+2019-11-05 11:03:26.723 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getUnfinishPunchByStudnetID    : <==      Total: 0
+2019-11-05 11:03:26.724 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.mapper.StudentMapper.getAllByRole  : ==>  Preparing: SELECT student_role.user_role as userRole,id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch FROM students INNER JOIN student_role ON student_role.user_id = studentID 
+2019-11-05 11:03:26.725 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.mapper.StudentMapper.getAllByRole  : ==> Parameters: 
+2019-11-05 11:03:26.727 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.mapper.StudentMapper.getAllByRole  : <==      Total: 2
+2019-11-05 11:03:26.728 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-11-05 11:03:26.732 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 201731062632(Long)
+2019-11-05 11:03:26.734 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-11-05 11:03:26.736 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-11-05 11:03:26.737 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-11-04(String), 2019-11-11(String), 201731062632(Long)
+2019-11-05 11:03:26.739 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-11-05 11:03:26.740 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getTodayByStudentID            : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE studentID = ? AND recordTime > 0 AND date_format(date, '%Y-%m-%d') = date_format(NOW(),'%Y-%m-%d'); 
+2019-11-05 11:03:26.740 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getTodayByStudentID            : ==> Parameters: 201731062631(Long)
+2019-11-05 11:03:26.741 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getTodayByStudentID            : <==      Total: 1
+2019-11-05 11:03:26.742 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getWeekByStudentID             : ==>  Preparing: SELECT SUM(recordTime) FROM punchrecord WHERE date_format(date, '%Y-%m-%d') >= ? AND date_format(date, '%Y-%m-%d') < ? AND studentID = ? and recordTime > 0 ; 
+2019-11-05 11:03:26.742 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getWeekByStudentID             : ==> Parameters: 2019-11-04(String), 2019-11-11(String), 201731062631(Long)
+2019-11-05 11:03:26.743 DEBUG 14316 --- [http-nio-8085-exec-6] c.y.p.m.P.getWeekByStudentID             : <==      Total: 1
+2019-11-05 11:03:26.744  INFO 14316 --- [http-nio-8085-exec-6] com.yrmjhtdjxh.punch.aspect.LogAspect    : Result:{unfinishTime=0, student=Student(id=19, studentID=201731062632, password=123456, name=panghu, sex=1, grade=2017, photo=demoData, avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, createTime=Mon Nov 04 14:45:03 CST 2019, isPunch=false), indexStudents=[IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=panghu, grade=2017, weekTime=1184.57, todayTime=1113.5, weekLeftTime=0.0, isPunch=false), IndexStudent(avatar=http://47.102.114.0:8080/images/boyAvatar.jpg, name=panghu, grade=2017, weekTime=0.0, todayTime=0.0, weekLeftTime=28.0, isPunch=false)], status=success}
+2019-11-05 11:19:07.676  INFO 13964 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 13964 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-05 11:19:07.679 DEBUG 13964 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-05 11:19:07.680  INFO 13964 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-05 11:19:07.759  INFO 13964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-05 11:19:07.760  INFO 13964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-05 11:19:08.559  INFO 13964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-05 11:19:08.576  INFO 13964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-11-05 11:19:08.872  INFO 13964 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1df8d230] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-05 11:19:09.318  INFO 13964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-05 11:19:09.337  INFO 13964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-05 11:19:09.338  INFO 13964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-05 11:19:09.429  INFO 13964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-05 11:19:09.429  INFO 13964 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1669 ms
+2019-11-05 11:19:10.340  INFO 13964 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-05 11:19:10.460  INFO 13964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-05 11:19:10.844  INFO 13964 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-05 11:19:10.857  INFO 13964 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-05 11:19:10.886  INFO 13964 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-05 11:19:11.032  INFO 13964 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-05 11:19:11.077  INFO 13964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-05 11:19:11.079  INFO 13964 --- [restartedMain] com.yrmjhtdjxh.punch.PunchApplication    : Started PunchApplication in 4.018 seconds (JVM running for 5.752)

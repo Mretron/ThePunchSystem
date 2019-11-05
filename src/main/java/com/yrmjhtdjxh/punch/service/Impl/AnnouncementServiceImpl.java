@@ -109,7 +109,7 @@ public class AnnouncementServiceImpl implements AnnouncementService {
 
     @Override
     public Result getList(HttpSession session) {
-        if (!userAuthentication(session,null)){
+        if (!userAuthentication(session,UserRole.AVERAGE_USER)){
             return Result.error(403,"权限不足");
         }
         //使用无条件查询
@@ -189,7 +189,7 @@ public class AnnouncementServiceImpl implements AnnouncementService {
         if (studentVO == null){
             return false;
         }else {
-            return userRole == null || userRole.getValue().equals(studentVO.getUserRole());
+            return userRole == null || userRole.getValue() < (studentVO.getUserRole());
         }
     }
 }

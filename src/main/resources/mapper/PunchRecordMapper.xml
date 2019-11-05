@@ -36,10 +36,17 @@
 
     <!--根据学生ID查看没有完成的打卡记录-->
     <select id="getUnfinishPunchByStudnetID" resultType="com.yrmjhtdjxh.punch.domain.PunchRecord">
-        SELECT *
+        SELECT id, studentID, beginPunchTime, endPunchTime, recordTime, date
         FROM punchrecord
         WHERE studentID = #{studentID}
         AND recordTime = 0;
+    </select>
+    <select id="getChartByTimeAndUser" resultType="com.yrmjhtdjxh.punch.VO.TimeRecordVO">
+        select sum(recordTime) as totalHourOfOneDay,date from punchrecord where studentID = #{userId}  group by date
+            <if test="end!=null and start!=null">
+                having date between #{start} and #{end}
+            </if>
+        ORDER BY date
     </select>
 
     <!--结束打卡，更新数据库中那一条数据-->
