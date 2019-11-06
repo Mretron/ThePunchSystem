@@ -82,7 +82,7 @@ public class StudentController {
     /**
      *  获取注册用户列表
      */
-    @ApiOperation("获取注册用户列表")
+    @ApiOperation("获取所有用户")
     @GetMapping("/getRegisterUserList")
     public Result getRegisterUserList(HttpSession httpSession) {
         return studentService.getRegisterUserList(httpSession);

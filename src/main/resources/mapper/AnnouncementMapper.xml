@@ -42,7 +42,7 @@
     </if>
   </select>
   <select id="selectAllByStatus" resultMap="BaseResultMap">
-    select id, publisher_id, title, content, publish_time, update_time
+    select id, publisher_id, title, content, publish_time, update_time,status
     from punch.announcement
     <where>
       <if test="status!=null">

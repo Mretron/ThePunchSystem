@@ -68,7 +68,7 @@ public class AnnouncementController {
      * @param announcementId
      * @return
      */
-    @PostMapping(value = "/delete", name = "删除公告")
+    @GetMapping(value = "/delete", name = "删除公告")
     public Result delete(Long announcementId,HttpSession session){
         return announcementService.delete(announcementId,session);
     }

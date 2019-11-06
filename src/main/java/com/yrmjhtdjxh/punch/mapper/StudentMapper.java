@@ -16,7 +16,7 @@ public interface StudentMapper {
 
     void insert(Student student);
 
-    Student getOne(Long studentID);
+    StudentVO getOne(Long studentID);
 
     StudentVO findStudentByStudentIDAndPassword(Long studentID, String password);
 

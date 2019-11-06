@@ -37,7 +37,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student getOne(Long studentID) {
+    public StudentVO getOne(Long studentID) {
         return studentMapper.getOne(studentID);
     }
 
@@ -51,7 +51,7 @@ public class StudentServiceImpl implements StudentService {
         if (!userAuthentication(httpSession,UserRole.ADMINISTRATOR)){
             return Result.error(403,"权限不足");
         }
-        return Result.success(studentMapper.getAllByRole(UserRole.REGISTER_USER.getValue()));
+        return Result.success(studentMapper.getAllByRole(null));
     }
 
     @Override
@@ -61,6 +61,10 @@ public class StudentServiceImpl implements StudentService {
         }
         if (userId == null){
             return Result.error(500,"请求参数不为空");
+        }
+        StudentVO studentVO = (StudentVO) session.getAttribute("student");
+        if (userId == studentVO.getId()) {
+            return Result.error(500,"删除自己？");
         }
         //删除角色信息
         studentRoleMapper.deleteByUserId(userId);
@@ -184,7 +188,7 @@ public class StudentServiceImpl implements StudentService {
         if (studentVO == null){
             return false;
         }else {
-            return userRole == null || userRole.getValue() < (studentVO.getUserRole());
+            return userRole == null || userRole.getValue() >= (studentVO.getUserRole());
         }
     }
 }

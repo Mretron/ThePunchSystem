@@ -10,7 +10,7 @@ import java.util.Map;
 
 public interface StudentService {
     void insert(Student student);
-    Student getOne(Long studentID);
+    StudentVO getOne(Long studentID);
     StudentVO checkStudent(Long studentID, String password);
     void changePunch(Long studentID, int punchStatus);
     Map<String, String> register(Student student);

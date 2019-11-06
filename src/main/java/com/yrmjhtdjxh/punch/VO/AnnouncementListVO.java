@@ -19,6 +19,7 @@ public class AnnouncementListVO implements Serializable {
      * 标题
      */
     private String title;
+
     /**
      * 发布时间
      */

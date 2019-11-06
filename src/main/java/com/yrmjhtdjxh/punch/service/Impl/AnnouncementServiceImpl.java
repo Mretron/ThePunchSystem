@@ -52,10 +52,14 @@ public class AnnouncementServiceImpl implements AnnouncementService {
         }
         return false;
     }
+
     @Override
     public Result delete(Long id,HttpSession session) {
         if (!userAuthentication(session,UserRole.ADMINISTRATOR)){
             return Result.error(403,"权限不足");
+        }
+        if (announcementMapper.selectByPrimaryKeyAndStatus(id,null) == null){
+            throw new IllegalArgumentException("公告不存在");
         }
         redisService.delete(AnnouncementKey.getById, id + "");
         redisService.delete(AnnouncementKey.getClickTimesById, id + "");
@@ -90,7 +94,7 @@ public class AnnouncementServiceImpl implements AnnouncementService {
 
     @Override
     public Result readAnnouncementDetail(Long announcementId,HttpSession session) {
-        if (!userAuthentication(session,UserRole.ADMINISTRATOR)){
+        if (!userAuthentication(session,UserRole.AVERAGE_USER)){
             return Result.error(403,"权限不足");
         }
         Announcement announcement = selectByIdAndStatus(announcementId);
@@ -113,7 +117,7 @@ public class AnnouncementServiceImpl implements AnnouncementService {
             return Result.error(403,"权限不足");
         }
         //使用无条件查询
-        List<AnnouncementListVO> listVOS = announcementMapper.selectAllByStatus(AnnouncementStatus.PUBLISHED.getValue());
+        List<AnnouncementListVO> listVOS = announcementMapper.selectAllByStatus(null);
         return Result.success(listVOS);
     }
 
@@ -189,7 +193,8 @@ public class AnnouncementServiceImpl implements AnnouncementService {
         if (studentVO == null){
             return false;
         }else {
-            return userRole == null || userRole.getValue() < (studentVO.getUserRole());
+            // userRole 越小权限越大
+            return userRole == null || userRole.getValue() >= (studentVO.getUserRole());
         }
     }
 }
