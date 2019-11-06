@@ -3,6 +3,7 @@ package com.yrmjhtdjxh.punch.web;
 import com.yrmjhtdjxh.punch.VO.Result;
 import com.yrmjhtdjxh.punch.domain.Student;
 import com.yrmjhtdjxh.punch.domain.StudentRole;
+import com.yrmjhtdjxh.punch.form.StudentForm;
 import com.yrmjhtdjxh.punch.form.StudentRoleForm;
 import com.yrmjhtdjxh.punch.service.StudentService;
 import io.swagger.annotations.Api;
@@ -38,7 +39,7 @@ public class StudentController {
      * @return
      */
     @PostMapping("/register")
-    public Map<String, String> register(@RequestBody @Valid Student student) {
+    public Map<String, String> register(@RequestBody @Valid StudentForm student) {
         return studentService.register(student);
     }
 

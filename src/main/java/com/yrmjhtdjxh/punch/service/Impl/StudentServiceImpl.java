@@ -5,11 +5,13 @@ import com.yrmjhtdjxh.punch.VO.StudentVO;
 import com.yrmjhtdjxh.punch.VO.TimeRecordVO;
 import com.yrmjhtdjxh.punch.domain.Student;
 import com.yrmjhtdjxh.punch.enums.UserRole;
+import com.yrmjhtdjxh.punch.form.StudentForm;
 import com.yrmjhtdjxh.punch.form.StudentRoleForm;
 import com.yrmjhtdjxh.punch.mapper.PunchRecordMapper;
 import com.yrmjhtdjxh.punch.mapper.StudentMapper;
 import com.yrmjhtdjxh.punch.mapper.StudentRoleMapper;
 import com.yrmjhtdjxh.punch.service.StudentService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -88,32 +90,29 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Map<String, String> register(Student student) {
+    public Map<String, String> register(StudentForm form) {
         Map<String, String> map = new HashMap<>();
 
         // 如果已经存在该学号
-        if(getOne(student.getStudentID()) != null ){
+        if(getOne(form.getStudentID()) != null ){
             map.put("status", "fail");
             map.put("error", "该学号已经存在");
             return map;
         }
 
-        student.setId(0);
-        student.setGrade(getGrade(student.getStudentID()));
-        student.setCreateTime(new Date());
-        student.setPassword(student.getPassword());
-
         // 设置默认头像
-        if(student.getSex() == 1) {
-            student.setAvatar("http://47.102.114.0:8080/images/boyAvatar.jpg");
+        if(form.getSex() == 1) {
+            form.setAvatar("http://47.102.114.0:8080/images/boyAvatar.jpg");
         } else {
-            student.setAvatar("http://47.102.114.0:8080/images/girlAvatar.png");
+            form.setAvatar("http://47.102.114.0:8080/images/girlAvatar.png");
         }
         // 匹配图片的地址，python已经保存，传送过来url
 
         // 刚注册默认未开始打卡
-        student.setPunch(false);
-
+        form.setCreateTime(new Date());
+        form.setPunch(false);
+        Student student = new Student();
+        BeanUtils.copyProperties(form,student);
         try{
             insert(student);
             studentRoleMapper.insert(student.getStudentID(),UserRole.REGISTER_USER.getValue());
