@@ -36,7 +36,7 @@ public class StudentAndPunchRecordServiceImpl implements StudentAndPunchRecordSe
     @Override
     public Map<String, Object> getStudentAndPunchInfo(HttpSession session) {
         Map<String, Object> map = new HashMap<>();
-        Student student = (Student) session.getAttribute("student");
+        StudentVO student = (StudentVO) session.getAttribute("student");
         if(student != null) {
             // 取出当前学生的信息
             map.put("status", "success");

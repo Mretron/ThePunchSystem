@@ -1,4 +1,4 @@
-package com.yrmjhtdjxh.punch.domain;
+package com.yrmjhtdjxh.punch.form;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -16,7 +16,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student {
+public class StudentForm {
     /**
      * 作为自增主键
      */
@@ -27,27 +27,31 @@ public class Student {
     /**
      * 学号
      */
+    @NotNull
     private Long studentID;
 
     /**
      * 密码
      */
-    @JsonIgnore
     private String password;
 
     /**
      * 学生姓名
      */
+    @NotNull
     private String name;
 
     /**
      * 性别 1：男 0：女
      */
+    @Max(1)
+    @Min(0)
     private int sex;
 
     /**
      * 学生的年级
      */
+    @NotNull
     private int grade;
 
     /**

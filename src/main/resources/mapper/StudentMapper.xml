@@ -6,8 +6,9 @@
     <delete id="deleteStudentByUserId">
         delete from students where studentID = #{userId}
     </delete>
-    <select id="getOne" parameterType="Long" resultType="com.yrmjhtdjxh.punch.domain.Student">
-        SELECT * FROM students WHERE studentID = #{studentID}
+    <select id="getOne" parameterType="Long" resultType="com.yrmjhtdjxh.punch.VO.StudentVO">
+        SELECT id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch,user_role as userRole
+        FROM students inner join student_role on studentID = student_role.user_id where studentID = #{studentID}
     </select>
     <insert id="insert" parameterType="com.yrmjhtdjxh.punch.domain.Student">
         INSERT INTO
