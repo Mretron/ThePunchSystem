@@ -67,10 +67,10 @@ public class AnnouncementServiceImpl implements AnnouncementService {
         return Result.success();
     }
 
-    private Announcement selectByIdAndStatus(Long announcementId) {
+    private Announcement selectByIdAndStatus(Long announcementId, Integer status) {
         Announcement announcement = redisService.get(AnnouncementKey.getById, announcementId + "", Announcement.class);
         if (announcement == null){
-            announcement = announcementMapper.selectByPrimaryKeyAndStatus(announcementId, null);
+            announcement = announcementMapper.selectByPrimaryKeyAndStatus(announcementId, status);
             if (announcement != null && announcement.getStatus().equals(AnnouncementStatus.PUBLISHED.getValue())){
                 redisService.set(AnnouncementKey.getById, announcementId + "", announcement);
             }
@@ -97,7 +97,7 @@ public class AnnouncementServiceImpl implements AnnouncementService {
         if (!userAuthentication(session,UserRole.AVERAGE_USER)){
             return Result.error(403,"权限不足");
         }
-        Announcement announcement = selectByIdAndStatus(announcementId);
+        Announcement announcement = selectByIdAndStatus(announcementId, AnnouncementStatus.PUBLISHED.getValue());
         if (announcement != null){
             AnnouncementVO announcementVO = new AnnouncementVO();
             BeanUtils.copyProperties(announcement, announcementVO);
@@ -126,7 +126,7 @@ public class AnnouncementServiceImpl implements AnnouncementService {
         if (!userAuthentication(session,UserRole.ADMINISTRATOR)){
             return Result.error(403,"权限不足");
         }
-        Announcement announcement = selectByIdAndStatus(updateForm.getAnnouncementId());
+        Announcement announcement = selectByIdAndStatus(updateForm.getAnnouncementId(),null);
         if (announcement == null){
             return Result.error(500,"公告不存在");
         }

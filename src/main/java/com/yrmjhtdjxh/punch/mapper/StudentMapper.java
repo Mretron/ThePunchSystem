@@ -27,4 +27,12 @@ public interface StudentMapper {
     int deleteStudentByUserId(@Param("userId")Long userId);
 
     void updateStudentInfo(Student student);
+
+    /**
+     * 只是为了更新数据库结构
+     * @return
+     */
+    List<String> getAllStudentID();
+
+
 }

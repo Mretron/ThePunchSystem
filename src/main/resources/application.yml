@@ -1,7 +1,7 @@
 spring:
   datasource:
     username: root
-    password: "123456"
+    password: "etron"
     url: jdbc:mysql://localhost:3306/punch?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
@@ -41,16 +41,16 @@ spring:
 
 #redis
 redis:
-  host: localhost
-  port: 6380
+  host: 127.0.0.1
+  port: 6379
   timeout: 10
   poolMaxTotal: 1000
   poolMaxIdle: 500
   poolMaxWait: 500
-  password: "123456"
+
 
 server:
-  port: 8085
+  port: 8083
 
 
 logging:

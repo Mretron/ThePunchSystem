@@ -23,7 +23,7 @@ public class RedisPoolFactory {
                 , redisConfig.getPort()
                 , redisConfig.getTimeout() * 1000
                 , redisConfig.getPassword()
-                , 1);
+                , 5);
         return jedisPool;
     }
 }

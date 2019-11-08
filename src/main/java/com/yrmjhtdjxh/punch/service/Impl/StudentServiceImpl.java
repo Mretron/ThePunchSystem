@@ -112,7 +112,9 @@ public class StudentServiceImpl implements StudentService {
         form.setCreateTime(new Date());
         form.setPunch(false);
         Student student = new Student();
+        int studentId = getGrade(form.getStudentID());
         BeanUtils.copyProperties(form,student);
+        student.setGrade(studentId);
         try{
             insert(student);
             studentRoleMapper.insert(student.getStudentID(),UserRole.REGISTER_USER.getValue());
@@ -144,6 +146,7 @@ public class StudentServiceImpl implements StudentService {
         Long studentID = Long.parseLong(loginMap.get("studentID"));
         String password = loginMap.get("password");
         Map<String, String> map = new HashMap<>();
+
         // 后面来看是否需要MD5加密
         StudentVO student = checkStudent(studentID, password);
         if(student == null || student.getUserRole().equals(UserRole.REGISTER_USER.getValue())) {
@@ -190,4 +193,11 @@ public class StudentServiceImpl implements StudentService {
             return userRole == null || userRole.getValue() >= (studentVO.getUserRole());
         }
     }
+
+/*    @Override
+    public List<String> getAllStudentID() {
+        return studentMapper.getAllStudentID();
+    }*/
+
+
 }

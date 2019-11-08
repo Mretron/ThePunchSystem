@@ -1,5 +1,6 @@
 package com.yrmjhtdjxh.punch.service.Impl;
 
+import com.yrmjhtdjxh.punch.VO.StudentVO;
 import com.yrmjhtdjxh.punch.domain.PunchRecord;
 import com.yrmjhtdjxh.punch.domain.Student;
 import com.yrmjhtdjxh.punch.mapper.PunchRecordMapper;
@@ -71,7 +72,7 @@ public class PunchRecordServiceImpl implements PunchRecordService {
         Map<String, Object> map = new HashMap<>();
 
         // 首先判断有没有登录
-        Student student = (Student) session.getAttribute("student");
+        StudentVO student = (StudentVO) session.getAttribute("student");
 
         // 如果该学生已经打卡，或者没有登录
         if(student == null || student.isPunch()) {
@@ -116,7 +117,7 @@ public class PunchRecordServiceImpl implements PunchRecordService {
         Long studentID = Long.parseLong(startPunchMap.get("studentID"));
 
         // 首先判断是否登录
-        Student student = (Student) session.getAttribute("student");
+        StudentVO student = (StudentVO) session.getAttribute("student");
         // 首先将得到数据库中这条打卡的数据
         PunchRecord punchRecord = getUnfinishPunchByStudnetID(studentID);
 

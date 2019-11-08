@@ -3,13 +3,19 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.yrmjhtdjxh.punch.mapper.StudentMapper">
+
+    <!--根据ID删除一个学生-->
     <delete id="deleteStudentByUserId">
         delete from students where studentID = #{userId}
     </delete>
+
+    <!--根据学号得到学生信息以及多表联查得到该学生角色-->
     <select id="getOne" parameterType="Long" resultType="com.yrmjhtdjxh.punch.VO.StudentVO">
         SELECT id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch,user_role as userRole
         FROM students inner join student_role on studentID = student_role.user_id where studentID = #{studentID}
     </select>
+
+    <!--新增一个学生-->
     <insert id="insert" parameterType="com.yrmjhtdjxh.punch.domain.Student">
         INSERT INTO
             students
@@ -17,11 +23,15 @@
         VALUES
             (#{id}, #{studentID},  #{password},  #{name}, #{sex},  #{grade},  #{photo},  #{avatar},  #{createTime},  #{isPunch})
     </insert>
+
+    <!--根据账号密码得到一个学生的信息和他的角色-->
     <select id="findStudentByStudentIDAndPassword"  resultType="com.yrmjhtdjxh.punch.VO.StudentVO">
         SELECT student_role.user_role as userRole,id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch
         FROM students INNER JOIN student_role ON student_role.user_id = students.studentID
         WHERE studentID = #{studentID} AND password = #{password}
     </select>
+
+    <!--根据角色得到所有的人-->
     <select id="getAllByRole" resultType="com.yrmjhtdjxh.punch.VO.StudentVO">
         SELECT student_role.user_role as userRole,id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch FROM students
         INNER JOIN student_role ON student_role.user_id = studentID
@@ -31,15 +41,29 @@
             </if>
         </where>
     </select>
+
+    <!--更改打卡状态-->
     <update id="updatePunchByStudentID">
         UPDATE students
         SET isPunch = #{punchStatus}
         WHERE studentID = #{studentID}
     </update>
+
     <!--只允许他们自己修改密码，-->
     <update id="updateStudentInfo" parameterType="com.yrmjhtdjxh.punch.domain.Student">
         UPDATE students
         SET password = #{password}
         WHERE studentID = #{studentID}
     </update>
+
+    <!--只是为了更新数据库-->
+    <select id="getAllStudentID" resultType="String">
+        SELECT studentID FROM students;
+    </select>
+
+    <insert id="insertToStudentRole" >
+        insert into
+    </insert>
+
+
 </mapper>

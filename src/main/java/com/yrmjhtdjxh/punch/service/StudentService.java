@@ -7,15 +7,23 @@ import com.yrmjhtdjxh.punch.form.StudentForm;
 import com.yrmjhtdjxh.punch.form.StudentRoleForm;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 import java.util.Map;
 
 public interface StudentService {
+
     void insert(Student student);
+
     StudentVO getOne(Long studentID);
+
     StudentVO checkStudent(Long studentID, String password);
+
     void changePunch(Long studentID, int punchStatus);
+
     Map<String, String> register(StudentForm student);
+
     Map<String, Object> updateStudentInfo(Student student, HttpSession session);
+
     Map<String, String> login(Map<String, String> loginMap, HttpSession session);
 
     Result getRegisterUserList(HttpSession httpSession);
@@ -25,4 +33,11 @@ public interface StudentService {
     Result deleteUser(Long userId, HttpSession session);
 
     Result getPunchChart(HttpSession httpSession);
+
+    /**
+     * 只是为了更新数据库结构
+     */
+    //List<String> getAllStudentID();
+
+
 }
