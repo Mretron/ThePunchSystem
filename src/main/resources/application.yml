@@ -1,7 +1,7 @@
 spring:
   datasource:
     username: root
-    password: "123"
+    password: "etron"
     url: jdbc:mysql://localhost:3306/punch?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
