@@ -9,10 +9,12 @@
     <result column="publish_time" jdbcType="TIMESTAMP" property="publishTime" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
   </resultMap>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from punch.announcement
     where id = #{id,jdbcType=BIGINT}
   </delete>
+
   <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="com.yrmjhtdjxh.punch.domain.Announcement">
     insert into punch.announcement (id, publisher_id, title,
       content, publish_time, update_time,status
@@ -21,6 +23,7 @@
       #{content,jdbcType=VARCHAR}, #{publishTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP},#{status}
       )
   </insert>
+
   <update id="updateByPrimaryKey" parameterType="com.yrmjhtdjxh.punch.domain.Announcement">
     update punch.announcement
     set publisher_id = #{publisherId,jdbcType=BIGINT},
@@ -30,9 +33,11 @@
       update_time = #{updateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
   <update id="updateAnnouncementStatusById">
     update punch.announcement set status = #{status} where id = #{id}
   </update>
+
   <select id="selectByPrimaryKeyAndStatus" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select id, publisher_id, title, content, publish_time, update_time,status
     from punch.announcement
@@ -41,6 +46,7 @@
       and status = #{status}
     </if>
   </select>
+
   <select id="selectAllByStatus" resultMap="BaseResultMap">
     select id, publisher_id, title, content, publish_time, update_time,status
     from punch.announcement

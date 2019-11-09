@@ -113,11 +113,11 @@ public class StudentServiceImpl implements StudentService {
         form.setPunch(false);
         Student student = new Student();
         int studentId = getGrade(form.getStudentID());
-        BeanUtils.copyProperties(form,student);
+        BeanUtils.copyProperties(form, student);
         student.setGrade(studentId);
         try{
             insert(student);
-            studentRoleMapper.insert(student.getStudentID(),UserRole.REGISTER_USER.getValue());
+            studentRoleMapper.insert(student.getStudentID(), UserRole.REGISTER_USER.getValue());
             map.put("status", "success");
         }catch (Exception e) {
             map.put("status", "fail");
@@ -156,6 +156,8 @@ public class StudentServiceImpl implements StudentService {
             map.put("role", String.valueOf(student.getUserRole()));
             // 登录成功，放入session
             session.setAttribute("student",student);
+            // 设置session过期为10分钟
+            session.setMaxInactiveInterval(60*10);
 
         }
         return map;

@@ -6,6 +6,7 @@ import com.yrmjhtdjxh.punch.domain.Student;
 import com.yrmjhtdjxh.punch.mapper.PunchRecordMapper;
 import com.yrmjhtdjxh.punch.mapper.StudentMapper;
 import com.yrmjhtdjxh.punch.service.PunchRecordService;
+import com.yrmjhtdjxh.punch.util.GetIPAddressUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,20 +68,20 @@ public class PunchRecordServiceImpl implements PunchRecordService {
     }
 
     @Override
-    public Map<String, Object> startPunch(Map<String, String> startPunchMap, HttpSession session, HttpServletRequest request) {
+    public Map<String, Object>  startPunch(Map<String, String> startPunchMap, HttpSession session, HttpServletRequest request) {
 
         Map<String, Object> map = new HashMap<>();
 
         // 首先判断有没有登录
         StudentVO student = (StudentVO) session.getAttribute("student");
 
-        // 如果该学生已经打卡，或者没有登录
-        if(student == null || student.isPunch()) {
+        // 如果该学生已经打卡，或者session不对应，或者没有登录
+        if(student == null || student.getStudentID() != Long.parseLong(startPunchMap.get("studentID")) || student.isPunch()) {
             map.put("status", "fail");
             map.put("msg", "已经在打卡或者没有登录。");
             return map;
         }
-/*
+
         String  local = GetIPAddressUtils.getIpAddress(request);
         logger.info("当前的IP地址为："+ local +"是否等于125.70.254.67");
 
@@ -89,7 +90,7 @@ public class PunchRecordServiceImpl implements PunchRecordService {
             map.put("status", "fail");
             map.put("msg", "请尝试连接LC2，并且拔出网线重试打卡");
             return map;
-        }*/
+        }
 
         // 否则识别为正常的打卡状态
         student.setPunch(true);
@@ -122,13 +123,13 @@ public class PunchRecordServiceImpl implements PunchRecordService {
         PunchRecord punchRecord = getUnfinishPunchByStudnetID(studentID);
 
         // 如果该学生没有登录或者没有开始打卡
-        if(student == null|| punchRecord == null ) {
+        if(student == null|| student.getStudentID() != Long.parseLong(startPunchMap.get("studentID")) || punchRecord == null ) {
             map.put("status", "fail");
             map.put("msg","没有登录或者没有开始打卡。");
             return map;
         }
 
-/*
+
         // 判断IP是否正确
         String  local = GetIPAddressUtils.getIpAddress(request);
         logger.info("当前的IP地址为："+ local +"是否等于125.70.254.67");
@@ -138,7 +139,7 @@ public class PunchRecordServiceImpl implements PunchRecordService {
             map.put("status", "fail");
             map.put("msg", "请尝试连接LC2，并且拔出网线重试打卡");
             return map;
-        }*/
+        }
 
 
         // 将本次时间计算出来

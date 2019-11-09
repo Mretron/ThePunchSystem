@@ -94,10 +94,20 @@ public class AnnouncementServiceImpl implements AnnouncementService {
 
     @Override
     public Result readAnnouncementDetail(Long announcementId,HttpSession session) {
+
+        // 判断普通用户能否查看
         if (!userAuthentication(session,UserRole.AVERAGE_USER)){
             return Result.error(403,"权限不足");
         }
+
+        // 根据ID得到已经发布的公告 或者没有发布的公告
         Announcement announcement = selectByIdAndStatus(announcementId, AnnouncementStatus.PUBLISHED.getValue());
+
+        // 如果是管理员，已经发布的没有找到，就去找保存但是还没有发布的
+        if(announcement == null &&  userAuthentication(session, UserRole.ADMINISTRATOR)) {
+            announcement = selectByIdAndStatus(announcementId, AnnouncementStatus.SAVE.getValue());
+        }
+
         if (announcement != null){
             AnnouncementVO announcementVO = new AnnouncementVO();
             BeanUtils.copyProperties(announcement, announcementVO);
@@ -108,6 +118,8 @@ public class AnnouncementServiceImpl implements AnnouncementService {
             }
             return Result.success(announcementVO);
         }
+
+
         return Result.error(500,"公告不存在");
     }
 

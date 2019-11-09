@@ -25,12 +25,6 @@ import java.util.Map;
 @Api(tags = "主页")
 public class IndexController {
 
-   /* @Autowired
-    private StudentService studentService;
-
-    @Autowired
-    private StudentRoleMapper studentRoleMapper;
-*/
 
     private StudentAndPunchRecordService studentAndPunchRecordService;
 
@@ -77,23 +71,5 @@ public class IndexController {
         return punchRecordService.endPunch(startPunchMap,session,request);
     }
 
-
-    /**
-     * 只是为了更新数据库
-     * @return
-     */
-/*    @GetMapping("/updateDatabase")
-    public Map<String, String> updateDatabase() {
-
-        List<String> studentsID = studentService.getAllStudentID();
-
-        for(String temp : studentsID) {
-            studentRoleMapper.insert(Long.parseLong(temp), 2);
-        }
-
-        Map<String, String> map = new HashMap<String, String>();
-        map.put("status", "yes");
-        return map;
-    }*/
 
 }
