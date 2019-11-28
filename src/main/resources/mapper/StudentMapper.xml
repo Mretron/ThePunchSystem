@@ -2,27 +2,27 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.yrmjhtdjxh.punch.mapper.StudentMapper">
+<mapper namespace="group.yrmjhtdjxh.punch.mapper.StudentMapper">
     <delete id="deleteStudentByUserId">
         delete from students where studentID = #{userId}
     </delete>
-    <select id="getOne" parameterType="Long" resultType="com.yrmjhtdjxh.punch.VO.StudentVO">
+    <select id="getOne" parameterType="Long" resultType="group.yrmjhtdjxh.punch.VO.StudentVO">
         SELECT id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch,user_role as userRole
         FROM students inner join student_role on studentID = student_role.user_id where studentID = #{studentID}
     </select>
-    <insert id="insert" parameterType="com.yrmjhtdjxh.punch.domain.Student">
+    <insert id="insert" parameterType="group.yrmjhtdjxh.punch.domain.Student">
         INSERT INTO
             students
             (id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch)
         VALUES
             (#{id}, #{studentID},  #{password},  #{name}, #{sex},  #{grade},  #{photo},  #{avatar},  #{createTime},  #{isPunch})
     </insert>
-    <select id="findStudentByStudentIDAndPassword"  resultType="com.yrmjhtdjxh.punch.VO.StudentVO">
+    <select id="findStudentByStudentIDAndPassword"  resultType="group.yrmjhtdjxh.punch.VO.StudentVO">
         SELECT student_role.user_role as userRole,id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch
         FROM students INNER JOIN student_role ON student_role.user_id = students.studentID
         WHERE studentID = #{studentID} AND password = #{password}
     </select>
-    <select id="getAllByRole" resultType="com.yrmjhtdjxh.punch.VO.StudentVO">
+    <select id="getAllByRole" resultType="group.yrmjhtdjxh.punch.VO.StudentVO">
         SELECT student_role.user_role as userRole,id, studentID, password, name, sex, grade, photo, avatar, createTime, isPunch FROM students
         INNER JOIN student_role ON student_role.user_id = studentID
         <where>
@@ -37,7 +37,7 @@
         WHERE studentID = #{studentID}
     </update>
     <!--只允许他们自己修改密码，-->
-    <update id="updateStudentInfo" parameterType="com.yrmjhtdjxh.punch.domain.Student">
+    <update id="updateStudentInfo" parameterType="group.yrmjhtdjxh.punch.domain.Student">
         UPDATE students
         SET password = #{password}
         WHERE studentID = #{studentID}
