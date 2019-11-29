@@ -34,10 +34,6 @@ public interface StudentService {
 
     Result getPunchChart(HttpSession httpSession);
 
-    /**
-     * 只是为了更新数据库结构
-     */
-    //List<String> getAllStudentID();
 
 
 }
