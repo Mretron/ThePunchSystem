@@ -2,9 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.yrmjhtdjxh.punch.mapper.PunchRecordMapper">
+<mapper namespace="group.yrmjhtdjxh.punch.mapper.PunchRecordMapper">
 
-    <select id="findByStudentID" resultType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+    <select id="findByStudentID" resultType="group.yrmjhtdjxh.punch.domain.PunchRecord">
         SELECT * FROM punchrecord WHERE studentID = #{studentID} AND recordTime > 0 ORDER BY beginPunchTime DESC
     </select>
 
@@ -26,7 +26,7 @@
     </select>
 
     <!--新增一条打卡记录-->
-    <insert id="insert" parameterType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+    <insert id="insert" parameterType="group.yrmjhtdjxh.punch.domain.PunchRecord">
         INSERT INTO
             punchrecord
             (id, studentID, beginPunchTime, endPunchTime, recordTime, date)
@@ -35,13 +35,13 @@
     </insert>
 
     <!--根据学生ID查看没有完成的打卡记录-->
-    <select id="getUnfinishPunchByStudnetID" resultType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+    <select id="getUnfinishPunchByStudnetID" resultType="group.yrmjhtdjxh.punch.domain.PunchRecord">
         SELECT id, studentID, beginPunchTime, endPunchTime, recordTime, date
         FROM punchrecord
         WHERE studentID = #{studentID}
         AND recordTime = 0;
     </select>
-    <select id="getChartByTimeAndUser" resultType="com.yrmjhtdjxh.punch.VO.TimeRecordVO">
+    <select id="getChartByTimeAndUser" resultType="group.yrmjhtdjxh.punch.VO.TimeRecordVO">
         select sum(recordTime) as totalHourOfOneDay,date from punchrecord where studentID = #{userId}  group by date
             <if test="end!=null and start!=null">
                 having date between #{start} and #{end}
@@ -50,7 +50,7 @@
     </select>
 
     <!--结束打卡，更新数据库中那一条数据-->
-    <update id="endPunchRecord" parameterType="com.yrmjhtdjxh.punch.domain.PunchRecord">
+    <update id="endPunchRecord" parameterType="group.yrmjhtdjxh.punch.domain.PunchRecord">
         UPDATE  punchrecord
         SET endPunchTime = #{endPunchTime},recordTime = #{recordTime}
         WHERE studentID = #{studentID}
