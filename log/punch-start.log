@@ -1,29 +1,36 @@
-2019-11-18 20:35:07.345  INFO 1956 --- [restartedMain] PunchApplication    : Starting PunchApplication on etron with PID 1956 (F:\ideaTest\ThePunchSystem_dgh\target\classes started by etron in F:\ideaTest\ThePunchSystem_dgh)
-2019-11-18 20:35:07.355 DEBUG 1956 --- [restartedMain] PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
-2019-11-18 20:35:07.358  INFO 1956 --- [restartedMain] PunchApplication    : No active profile set, falling back to default profiles: default
-2019-11-18 20:35:07.579  INFO 1956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-11-18 20:35:07.580  INFO 1956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-11-18 20:35:09.705  INFO 1956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-18 20:35:09.729  INFO 1956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
-2019-11-18 20:35:10.179  INFO 1956 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$758975da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-18 20:35:10.941  INFO 1956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-11-18 20:35:10.963  INFO 1956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-18 20:35:10.964  INFO 1956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
-2019-11-18 20:35:11.066  INFO 1956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-18 20:35:11.067  INFO 1956 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3487 ms
-2019-11-18 20:35:12.496  INFO 1956 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2019-11-18 20:35:12.622  INFO 1956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-11-18 20:35:13.151  INFO 1956 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2019-11-18 20:35:13.169  INFO 1956 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2019-11-18 20:35:13.203  INFO 1956 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2019-11-18 20:35:13.390  INFO 1956 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
-2019-11-18 20:35:13.438  INFO 1956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-18 20:35:13.441  INFO 1956 --- [restartedMain] PunchApplication    : Started PunchApplication in 6.985 seconds (JVM running for 9.948)
-2019-11-18 20:35:45.235  INFO 1956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-18 20:35:45.235  INFO 1956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-18 20:35:45.251  INFO 1956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
-2019-11-18 20:35:45.271  WARN 1956 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /boyAvatar.jpg
-2019-11-18 20:35:45.898  WARN 1956 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
-2019-11-18 20:36:20.459  WARN 1956 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
-2019-11-18 20:36:58.001  WARN 1956 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /static/images/boyAvatar.jpg
-2019-11-18 20:37:58.267  WARN 1956 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
+2019-11-30 16:04:13.216  INFO 9788 --- [restartedMain] group.yrmjhtdjxh.punch.PunchApplication  : Starting PunchApplication on etron with PID 9788 (F:\ideaTest\ThePunchSystem\target\classes started by etron in F:\ideaTest\ThePunchSystem)
+2019-11-30 16:04:13.292  INFO 9788 --- [restartedMain] group.yrmjhtdjxh.punch.PunchApplication  : No active profile set, falling back to default profiles: default
+2019-11-30 16:04:13.398  INFO 9788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-30 16:04:13.399  INFO 9788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-30 16:04:14.730  INFO 9788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-30 16:04:14.759  INFO 9788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-11-30 16:04:14.895  WARN 9788 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.yrmjhtdjxh.punch.mapper]' package. Please check your configuration.
+2019-11-30 16:04:15.146  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e8ba4b4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-30 16:04:15.752  INFO 9788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-30 16:04:15.777  INFO 9788 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-30 16:04:15.777  INFO 9788 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-30 16:04:15.875  INFO 9788 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-30 16:04:15.876  INFO 9788 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2474 ms
+2019-11-30 16:04:16.148  WARN 9788 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'announcementServiceImpl': Unsatisfied dependency expressed through field 'announcementMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'group.yrmjhtdjxh.punch.mapper.AnnouncementMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-11-30 16:04:16.151  INFO 9788 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-11-30 16:04:16.180  INFO 9788 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-30 16:04:16.321 ERROR 9788 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field announcementMapper in group.yrmjhtdjxh.punch.service.Impl.AnnouncementServiceImpl required a bean of type 'group.yrmjhtdjxh.punch.mapper.AnnouncementMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'group.yrmjhtdjxh.punch.mapper.AnnouncementMapper' in your configuration.
+
