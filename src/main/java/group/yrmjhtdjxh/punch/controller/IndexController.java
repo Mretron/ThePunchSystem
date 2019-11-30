@@ -1,4 +1,4 @@
-package group.yrmjhtdjxh.punch.web;
+package group.yrmjhtdjxh.punch.controller;
 
 import group.yrmjhtdjxh.punch.service.PunchRecordService;
 import group.yrmjhtdjxh.punch.service.StudentAndPunchRecordService;

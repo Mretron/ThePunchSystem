@@ -1,4 +1,4 @@
-package group.yrmjhtdjxh.punch.web;
+package group.yrmjhtdjxh.punch.controller;
 
 import group.yrmjhtdjxh.punch.VO.Result;
 import group.yrmjhtdjxh.punch.domain.Student;

@@ -1,0 +1,249 @@
+2019-11-08 17:31:44.334  INFO 6772 --- [restartedMain] PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 6772 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-08 17:31:44.340 DEBUG 6772 --- [restartedMain] PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-08 17:31:44.341  INFO 6772 --- [restartedMain] PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-08 17:31:44.443  INFO 6772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-08 17:31:44.444  INFO 6772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-08 17:31:45.306  INFO 6772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-08 17:31:45.316  INFO 6772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-11-08 17:31:45.576  INFO 6772 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$47d4fb69] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-08 17:31:46.011  INFO 6772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-08 17:31:46.031  INFO 6772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-08 17:31:46.031  INFO 6772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-08 17:31:46.121  INFO 6772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-08 17:31:46.121  INFO 6772 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1677 ms
+2019-11-08 17:31:47.040  INFO 6772 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-08 17:31:47.178  INFO 6772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-08 17:31:47.540  INFO 6772 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-08 17:31:47.550  INFO 6772 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-08 17:31:47.570  INFO 6772 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-08 17:31:47.690  INFO 6772 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-08 17:31:47.730  INFO 6772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-08 17:31:47.730  INFO 6772 --- [restartedMain] PunchApplication    : Started PunchApplication in 4.244 seconds (JVM running for 7.162)
+2019-11-08 17:31:54.504  INFO 6772 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-08 17:31:54.504  INFO 6772 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-08 17:31:54.518  INFO 6772 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-08 17:31:54.531  WARN 6772 --- [http-nio-8085-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /image/boyAvatar.jpg
+2019-11-08 17:31:54.863  WARN 6772 --- [http-nio-8085-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2019-11-08 17:32:16.656  WARN 6772 --- [http-nio-8085-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
+2019-11-08 17:32:34.551  WARN 6772 --- [http-nio-8085-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET //images/boyAvatar.jpg
+2019-11-08 17:32:48.567  WARN 6772 --- [http-nio-8085-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET //images/boyAvatar.jpg
+2019-11-08 17:32:48.850  WARN 6772 --- [http-nio-8085-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2019-11-08 17:33:36.172  WARN 6772 --- [http-nio-8085-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
+2019-11-08 17:33:48.666  WARN 6772 --- [http-nio-8085-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /static/images/boyAvatar.jpg
+2019-11-08 17:34:31.150  WARN 6772 --- [http-nio-8085-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
+2019-11-08 18:10:50.688  INFO 1368 --- [restartedMain] PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 1368 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-08 18:10:50.688 DEBUG 1368 --- [restartedMain] PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-08 18:10:50.688  INFO 1368 --- [restartedMain] PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-08 18:10:50.788  INFO 1368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-08 18:10:50.788  INFO 1368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-08 18:10:51.468  INFO 1368 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-08 18:10:51.478  INFO 1368 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-11-08 18:10:51.748  INFO 1368 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a99598a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-08 18:10:52.168  INFO 1368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-08 18:10:52.188  INFO 1368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-08 18:10:52.188  INFO 1368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-08 18:10:52.268  INFO 1368 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-08 18:10:52.268  INFO 1368 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1480 ms
+2019-11-08 18:10:53.108  INFO 1368 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-08 18:10:53.218  INFO 1368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-08 18:10:53.568  INFO 1368 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-08 18:10:53.588  INFO 1368 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-08 18:10:53.618  INFO 1368 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-08 18:10:53.748  INFO 1368 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-08 18:10:53.788  INFO 1368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-08 18:10:53.788  INFO 1368 --- [restartedMain] PunchApplication    : Started PunchApplication in 3.68 seconds (JVM running for 5.234)
+2019-11-08 18:11:10.822  INFO 1368 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-08 18:11:10.822  INFO 1368 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-08 18:11:10.832  INFO 1368 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-11-08 18:11:10.843  WARN 1368 --- [http-nio-8085-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
+2019-11-08 18:12:14.654  INFO 15332 --- [restartedMain] PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 15332 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-08 18:12:14.654 DEBUG 15332 --- [restartedMain] PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-08 18:12:14.654  INFO 15332 --- [restartedMain] PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-08 18:12:14.744  INFO 15332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-08 18:12:14.744  INFO 15332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-08 18:12:15.424  INFO 15332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-08 18:12:15.444  INFO 15332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-11-08 18:12:15.704  INFO 15332 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a68a069] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-08 18:12:16.224  INFO 15332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-08 18:12:16.244  INFO 15332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-08 18:12:16.244  INFO 15332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-08 18:12:16.354  INFO 15332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-08 18:12:16.354  INFO 15332 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1610 ms
+2019-11-08 18:12:17.294  INFO 15332 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-08 18:12:17.434  INFO 15332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-08 18:12:17.864  INFO 15332 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-08 18:12:17.884  INFO 15332 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-08 18:12:17.914  INFO 15332 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-08 18:12:18.074  INFO 15332 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-08 18:12:18.114  INFO 15332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-08 18:12:18.124  INFO 15332 --- [restartedMain] PunchApplication    : Started PunchApplication in 4.24 seconds (JVM running for 5.938)
+2019-11-08 18:12:49.927  INFO 15332 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-08 18:12:49.927  INFO 15332 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-08 18:12:49.937  INFO 15332 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-11-08 18:12:49.951  WARN 15332 --- [http-nio-8085-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
+2019-11-08 18:13:11.274  WARN 15332 --- [http-nio-8085-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
+2019-11-08 18:13:28.988  WARN 15332 --- [http-nio-8085-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
+2019-11-08 18:13:29.280  WARN 15332 --- [http-nio-8085-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2019-11-08 18:13:41.279  INFO 15168 --- [restartedMain] PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 15168 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-08 18:13:41.289 DEBUG 15168 --- [restartedMain] PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-08 18:13:41.289  INFO 15168 --- [restartedMain] PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-08 18:13:41.359  INFO 15168 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-08 18:13:41.359  INFO 15168 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-08 18:13:42.071  INFO 15168 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-08 18:13:42.089  INFO 15168 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-11-08 18:13:42.378  INFO 15168 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9fcaa2c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-08 18:13:42.801  INFO 15168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-08 18:13:42.823  INFO 15168 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-08 18:13:42.823  INFO 15168 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-08 18:13:42.918  INFO 15168 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-08 18:13:42.919  INFO 15168 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1560 ms
+2019-11-08 18:13:43.761  INFO 15168 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-08 18:13:43.861  INFO 15168 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-08 18:13:44.211  INFO 15168 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-08 18:13:44.221  INFO 15168 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-08 18:13:44.251  INFO 15168 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-08 18:13:44.381  INFO 15168 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-08 18:13:44.421  INFO 15168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-08 18:13:44.421  INFO 15168 --- [restartedMain] PunchApplication    : Started PunchApplication in 3.671 seconds (JVM running for 5.521)
+2019-11-08 18:16:37.396  INFO 15168 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-08 18:16:37.397  INFO 15168 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-08 18:16:37.408  INFO 15168 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-08 18:16:37.422  WARN 15168 --- [http-nio-8085-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
+2019-11-08 18:18:57.549  INFO 28064 --- [restartedMain] PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 28064 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-08 18:18:57.549 DEBUG 28064 --- [restartedMain] PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-08 18:18:57.549  INFO 28064 --- [restartedMain] PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-08 18:18:57.649  INFO 28064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-08 18:18:57.649  INFO 28064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-08 18:18:58.464  INFO 28064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-08 18:18:58.484  INFO 28064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-11-08 18:18:58.784  INFO 28064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc6b5b03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-08 18:18:59.204  INFO 28064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-08 18:18:59.214  INFO 28064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-08 18:18:59.214  INFO 28064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-08 18:18:59.314  INFO 28064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-08 18:18:59.314  INFO 28064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1665 ms
+2019-11-08 18:19:00.184  INFO 28064 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-08 18:19:00.284  INFO 28064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-08 18:19:00.601  WARN 28064 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-11-08 18:19:00.718  INFO 28064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-08 18:19:00.738  INFO 28064 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-08 18:19:00.768  INFO 28064 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-08 18:19:00.933  INFO 28064 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-08 18:19:00.968  INFO 28064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-08 18:19:00.968  INFO 28064 --- [restartedMain] PunchApplication    : Started PunchApplication in 4.079 seconds (JVM running for 5.907)
+2019-11-08 18:19:04.484  INFO 28064 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-08 18:19:04.484  INFO 28064 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-08 18:19:04.493  INFO 28064 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-11-08 18:19:04.504  WARN 28064 --- [http-nio-8085-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
+2019-11-08 18:19:06.144  WARN 28064 --- [http-nio-8085-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
+2019-11-08 18:23:06.761  INFO 26484 --- [restartedMain] PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 26484 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-08 18:23:06.764 DEBUG 26484 --- [restartedMain] PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-08 18:23:06.764  INFO 26484 --- [restartedMain] PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-08 18:23:06.865  INFO 26484 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-08 18:23:06.865  INFO 26484 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-08 18:23:07.969  INFO 26484 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-08 18:23:07.994  INFO 26484 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2019-11-08 18:23:08.362  INFO 26484 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30f506e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-08 18:23:09.110  INFO 26484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-08 18:23:09.130  INFO 26484 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-08 18:23:09.130  INFO 26484 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-08 18:23:09.314  INFO 26484 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-08 18:23:09.315  INFO 26484 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2450 ms
+2019-11-08 18:23:10.227  INFO 26484 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-08 18:23:10.340  INFO 26484 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-08 18:23:10.668  WARN 26484 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-11-08 18:23:10.780  INFO 26484 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-08 18:23:10.796  INFO 26484 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-08 18:23:10.820  INFO 26484 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-08 18:23:10.984  INFO 26484 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-08 18:23:11.022  INFO 26484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-08 18:23:11.024  INFO 26484 --- [restartedMain] PunchApplication    : Started PunchApplication in 5.075 seconds (JVM running for 7.371)
+2019-11-08 18:23:19.312  INFO 26484 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-08 18:23:19.312  INFO 26484 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-08 18:23:19.325  INFO 26484 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-11-08 18:23:19.339  WARN 26484 --- [http-nio-8085-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /boyAvatar.jpg
+2019-11-08 18:24:51.214  INFO 27420 --- [restartedMain] PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 27420 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-08 18:24:51.216 DEBUG 27420 --- [restartedMain] PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-08 18:24:51.217  INFO 27420 --- [restartedMain] PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-08 18:24:51.306  INFO 27420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-08 18:24:51.306  INFO 27420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-08 18:24:52.475  INFO 27420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-08 18:24:52.493  INFO 27420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-11-08 18:24:52.846  INFO 27420 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$61da5432] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-08 18:24:53.310  INFO 27420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-08 18:24:53.327  INFO 27420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-08 18:24:53.328  INFO 27420 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-08 18:24:53.420  INFO 27420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-08 18:24:53.420  INFO 27420 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2114 ms
+2019-11-08 18:24:54.556  INFO 27420 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-08 18:24:54.682  INFO 27420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-08 18:24:55.226  INFO 27420 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-08 18:24:55.245  INFO 27420 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-08 18:24:55.274  INFO 27420 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-08 18:24:55.460  INFO 27420 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-08 18:24:55.503  INFO 27420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-08 18:24:55.506  INFO 27420 --- [restartedMain] PunchApplication    : Started PunchApplication in 4.923 seconds (JVM running for 6.559)
+2019-11-08 18:25:02.422  INFO 27420 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-08 18:25:02.422  INFO 27420 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-08 18:25:02.436  INFO 27420 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-11-08 18:25:02.451  WARN 27420 --- [http-nio-8085-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /
+2019-11-08 18:25:12.324  WARN 27420 --- [http-nio-8085-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /index.html
+2019-11-08 18:27:08.964  INFO 28984 --- [restartedMain] PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 28984 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-08 18:27:08.967 DEBUG 28984 --- [restartedMain] PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-08 18:27:08.968  INFO 28984 --- [restartedMain] PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-08 18:27:09.035  INFO 28984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-08 18:27:09.035  INFO 28984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-08 18:27:09.823  INFO 28984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-08 18:27:09.843  INFO 28984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-11-08 18:27:10.179  INFO 28984 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bc85561d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-08 18:27:10.669  INFO 28984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-08 18:27:10.691  INFO 28984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-08 18:27:10.692  INFO 28984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-08 18:27:10.792  INFO 28984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-08 18:27:10.793  INFO 28984 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1756 ms
+2019-11-08 18:27:11.644  INFO 28984 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-08 18:27:11.750  INFO 28984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-08 18:27:12.214  INFO 28984 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-08 18:27:12.231  INFO 28984 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-08 18:27:12.261  INFO 28984 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-08 18:27:12.399  INFO 28984 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-08 18:27:12.437  INFO 28984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-08 18:27:12.440  INFO 28984 --- [restartedMain] PunchApplication    : Started PunchApplication in 4.412 seconds (JVM running for 6.239)
+2019-11-08 18:27:15.696  INFO 28984 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-08 18:27:15.696  INFO 28984 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-08 18:27:15.706  INFO 28984 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-11-08 18:27:15.719  WARN 28984 --- [http-nio-8085-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /images/boyAvatar.jpg
+2019-11-08 18:27:21.220  WARN 28984 --- [http-nio-8085-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /boyAvatar.jpg
+2019-11-08 18:27:49.461  WARN 28984 --- [http-nio-8085-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /boyAvatar.jpg
+2019-11-08 18:27:50.060  WARN 28984 --- [http-nio-8085-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /boyAvatar.jpg
+2019-11-08 18:27:58.519  INFO 26408 --- [restartedMain] PunchApplication    : Starting PunchApplication on DESKTOP-RFQAJO8 with PID 26408 (E:\IdeaProjects\ThePunchSystem\target\classes started by dengg in E:\IdeaProjects\ThePunchSystem)
+2019-11-08 18:27:58.522 DEBUG 26408 --- [restartedMain] PunchApplication    : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-08 18:27:58.523  INFO 26408 --- [restartedMain] PunchApplication    : No active profile set, falling back to default profiles: default
+2019-11-08 18:27:58.635  INFO 26408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-08 18:27:58.636  INFO 26408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-08 18:27:59.463  INFO 26408 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-08 18:27:59.481  INFO 26408 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2019-11-08 18:27:59.802  INFO 26408 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef9c3f98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-08 18:28:00.286  INFO 26408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2019-11-08 18:28:00.305  INFO 26408 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-08 18:28:00.305  INFO 26408 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-08 18:28:00.491  INFO 26408 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-08 18:28:00.492  INFO 26408 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1856 ms
+2019-11-08 18:28:01.348  INFO 26408 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-08 18:28:01.489  INFO 26408 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-08 18:28:01.986  INFO 26408 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-08 18:28:01.998  INFO 26408 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-08 18:28:02.024  INFO 26408 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-08 18:28:02.190  INFO 26408 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2019-11-08 18:28:02.226  INFO 26408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2019-11-08 18:28:02.229  INFO 26408 --- [restartedMain] PunchApplication    : Started PunchApplication in 4.353 seconds (JVM running for 6.141)
+2019-11-08 18:28:17.608  INFO 26408 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-08 18:28:17.609  INFO 26408 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-08 18:28:17.623  INFO 26408 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-08 18:28:17.637  WARN 26408 --- [http-nio-8085-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /boyAvatar.jpg
+2019-11-08 18:28:18.086  WARN 26408 --- [http-nio-8085-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /boyAvatar.jpg
+2019-11-08 18:28:18.307  WARN 26408 --- [http-nio-8085-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /boyAvatar.jpg
+2019-11-08 18:28:18.520  WARN 26408 --- [http-nio-8085-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /boyAvatar.jpg
+2019-11-08 18:29:05.617  WARN 26408 --- [http-nio-8085-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET //imageboyAvatar.jpg
+2019-11-08 18:30:04.800  WARN 26408 --- [http-nio-8085-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2019-11-08 18:34:37.183  WARN 26408 --- [http-nio-8085-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /apply/1_%E7%AB%8B%E9%A1%B9%E7%94%B3%E8%AF%B7%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9.pdf
