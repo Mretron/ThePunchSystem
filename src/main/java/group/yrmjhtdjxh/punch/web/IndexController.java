@@ -43,12 +43,15 @@ public class IndexController {
         return studentAndPunchRecordService.getStudentAndPunchInfo(session);
     }
 
-    /**
+/*
+    */
+/**
      * 开始打卡的接口
      * @param startPunchMap
      * @param session
      * @return
-     */
+     *//*
+
     @PostMapping("/startPunch")
     public Map<String ,Object> startPunch(@RequestBody Map<String, String> startPunchMap,
                                           HttpSession session,
@@ -56,18 +59,21 @@ public class IndexController {
         return punchRecordService.startPunch(startPunchMap,session,request);
     }
 
-    /**
+    */
+/**
      * 结束打卡的接口
      * @param startPunchMap,
      * @param session
      * @return
-     */
+     *//*
+
     @PostMapping("/endPunch")
     public Map<String, Object> endPunch(@RequestBody Map<String, String> startPunchMap,
                                         HttpSession session,
                                         HttpServletRequest request){
         return punchRecordService.endPunch(startPunchMap,session,request);
     }
+*/
 
 
 }
