@@ -32,7 +32,7 @@ CREATE TABLE `announcement`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 20 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '公告表' ROW_FORMAT = Dynamic;
 
--- ----------------------------
+-- --------------- -------------
 -- Table structure for punchrecord
 -- ----------------------------
 DROP TABLE IF EXISTS `punchrecord`;
